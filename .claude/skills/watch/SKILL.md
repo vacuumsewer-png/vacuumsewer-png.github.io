@@ -31,7 +31,7 @@ python3 <this-skill-folder>/scripts/watch.py "<url-or-file>" --mode efficient --
 `<this-skill-folder>` is the folder holding this SKILL.md (in this repo:
 `.claude/skills/watch`). Options: `--max-frames N` overrides the cap,
 `--scene 0.2` makes scene detection more sensitive (default 0.3), `--lang xx` sets the
-caption language. For a local file, captions are picked up from a sidecar
+caption language, `--no-stt` disables the paid speech-to-text fallback. For a local file, captions are picked up from a sidecar
 `<same-name>.vtt` if present.
 
 The script prints one JSON line: `{"index": ..., "frames": N, "paragraphs": N, "duration": ...}`.
@@ -43,12 +43,15 @@ The script prints one JSON line: `{"index": ..., "frames": N, "paragraphs": N, "
    user cares about first (frames marked `(deictic)` are where the speaker pointed at
    something on screen).
 3. Answer with timestamps (`[00:12:34]`) so the user can jump to the moment.
-4. Say which mode you used and how many frames you looked at. If no captions were found,
-   say the answer is based on frames only.
+4. Say which mode you used, how many frames you looked at, and where the transcript came
+   from (captions, speech-to-text, or none: frames only).
 
 ## Limits
 
-- No speech-to-text fallback yet: videos without captions (many Looms, raw local files)
-  get frames only.
+- Speech-to-text fallback: when a video has no captions (many Looms, raw local files)
+  and `OPENAI_API_KEY` is set, the audio is transcribed with OpenAI `whisper-1`
+  (paid per minute of audio; long audio is sent in 20-minute chunks). The JSON line then
+  says `"transcript_source": "speech-to-text"`. Without a key, or with `--no-stt`, you
+  get frames only. `OPENAI_BASE_URL` overrides the API endpoint.
 - Private or login-only videos need yt-dlp cookies (`--cookies-from-browser`), not wired in.
 - `--out` is wiped at the start of each run.

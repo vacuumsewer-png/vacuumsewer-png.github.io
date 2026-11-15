@@ -13,7 +13,7 @@ Output: <out>/index.md (frames interleaved with transcript), <out>/transcript.md
 
 Requires: ffmpeg/ffprobe on PATH, yt-dlp (for URLs), Pillow, numpy.
 """
-import argparse, glob, json, os, re, shutil, subprocess, sys
+import argparse, glob, json, os, re, shutil, subprocess, sys, urllib.request, uuid
 import numpy as np
 from PIL import Image
 
@@ -108,6 +108,73 @@ def merge_lines(lines, window=15):
     if cur:
         paras.append((start, " ".join(cur)))
     return paras
+
+
+# ---------------------------------------------------------------- speech-to-text fallback
+CHUNK_SEC = 20 * 60  # 20 min of 32 kbps mono mp3 is ~5 MB, well under the API's 25 MB limit
+
+
+def fetch_audio(src, work):
+    """Get an audio source path: the local file, or bestaudio via yt-dlp for a URL."""
+    if os.path.exists(src):
+        return src
+    run(["yt-dlp", "--no-playlist", "--no-warnings", "-f", "ba/b", "-o",
+         os.path.join(work, "audio.%(ext)s"), src])
+    got = glob.glob(os.path.join(work, "audio.*"))
+    return got[0] if got else None
+
+
+def openai_transcribe(path, key, base):
+    """POST one audio file to /audio/transcriptions; return [(start_sec, text)]."""
+    boundary = uuid.uuid4().hex
+    parts = []
+    for name, val in (("model", "whisper-1"), ("response_format", "verbose_json")):
+        parts.append(f'--{boundary}\r\nContent-Disposition: form-data; name="{name}"\r\n\r\n{val}\r\n'.encode())
+    parts.append(f'--{boundary}\r\nContent-Disposition: form-data; name="file"; filename="a.mp3"\r\n'
+                 f'Content-Type: audio/mpeg\r\n\r\n'.encode() + open(path, "rb").read() + b"\r\n")
+    parts.append(f"--{boundary}--\r\n".encode())
+    req = urllib.request.Request(base.rstrip("/") + "/audio/transcriptions", data=b"".join(parts),
+                                 headers={"Authorization": f"Bearer {key}",
+                                          "Content-Type": f"multipart/form-data; boundary={boundary}"})
+    with urllib.request.urlopen(req, timeout=600) as r:
+        data = json.load(r)
+    segs = data.get("segments") or [{"start": 0, "text": data.get("text", "")}]
+    return [(float(x["start"]), x["text"].strip()) for x in segs if x.get("text", "").strip()]
+
+
+def speech_to_text(src, work):
+    """Transcribe with OpenAI when no captions exist. Returns [] if no key or on failure."""
+    key = os.environ.get("OPENAI_API_KEY")
+    if not key:
+        log("no captions and OPENAI_API_KEY not set: skipping speech-to-text")
+        return []
+    base = os.environ.get("OPENAI_BASE_URL", "https://api.openai.com/v1")
+    audio = fetch_audio(src, work)
+    if not audio:
+        log("could not get audio for speech-to-text")
+        return []
+    adir = os.path.join(work, "stt")
+    os.makedirs(adir, exist_ok=True)
+    r = run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-i", audio, "-vn", "-ac", "1",
+             "-ar", "16000", "-b:a", "32k", "-f", "segment", "-segment_time", str(CHUNK_SEC),
+             os.path.join(adir, "c_%03d.mp3")])
+    chunks = sorted(glob.glob(os.path.join(adir, "c_*.mp3")))
+    if r.returncode != 0 or not chunks:
+        log("audio extraction failed:", r.stderr[-300:])
+        return []
+    out = []
+    try:
+        for i, c in enumerate(chunks):
+            log(f"speech-to-text chunk {i + 1}/{len(chunks)}")
+            out += [(t + i * CHUNK_SEC, txt) for t, txt in openai_transcribe(c, key, base)]
+    except Exception as e:  # network/auth errors: keep going with frames only
+        log("speech-to-text failed:", e)
+        return []
+    finally:
+        shutil.rmtree(adir, ignore_errors=True)
+        if audio != src:
+            os.remove(audio)
+    return out
 
 
 # ---------------------------------------------------------------- frames
@@ -207,7 +274,7 @@ def select_frames(video, mode, work, lines, scene, max_frames):
 
 
 # ---------------------------------------------------------------- output
-def write_outputs(work, title, src, mode, paras, frames, dur):
+def write_outputs(work, title, src, mode, paras, frames, dur, stt_used=False):
     with open(os.path.join(work, "transcript.md"), "w") as f:
         f.write(f"# Transcript: {title}\n\n")
         for t, txt in paras:
@@ -219,6 +286,8 @@ def write_outputs(work, title, src, mode, paras, frames, dur):
                 f"Frames: {len(frames)} | Transcript paragraphs: {len(paras)}\n\n")
         if not paras:
             f.write("> No captions found. Frames only.\n\n")
+        elif stt_used:
+            f.write("> No captions on the video: transcript is machine speech-to-text (OpenAI).\n\n")
         for _, _, line in sorted(events):
             f.write(line + "\n\n")
 
@@ -231,6 +300,7 @@ def main():
     ap.add_argument("--max-frames", type=int, default=None, help="override frame cap")
     ap.add_argument("--scene", type=float, default=0.3, help="scene-change threshold 0-1 (balanced/burner)")
     ap.add_argument("--lang", default="en", help="caption language code")
+    ap.add_argument("--no-stt", action="store_true", help="never fall back to paid speech-to-text")
     a = ap.parse_args()
 
     work = os.path.abspath(a.out or "watch_out")
@@ -240,8 +310,10 @@ def main():
     need_video = a.mode != "transcript"
     video, capfile, title = acquire(a.source, work, need_video, a.lang)
     lines = parse_vtt(capfile) if capfile else []
-    if not lines:
-        log("no captions found (speech-to-text fallback is not implemented yet)")
+    stt_used = False
+    if not lines and not a.no_stt:
+        lines = speech_to_text(video or a.source, work)
+        stt_used = bool(lines)
     paras = merge_lines(lines)
     frames, dur = [], 0.0
     if need_video:
@@ -252,9 +324,10 @@ def main():
             os.remove(video)  # free disk; frames are kept
     elif lines:
         dur = lines[-1][0]
-    write_outputs(work, title, a.source, a.mode, paras, frames, dur)
+    write_outputs(work, title, a.source, a.mode, paras, frames, dur, stt_used)
     print(json.dumps({"index": os.path.join(work, "index.md"), "frames": len(frames),
-                      "paragraphs": len(paras), "duration": ts(dur), "mode": a.mode}))
+                      "paragraphs": len(paras), "duration": ts(dur), "mode": a.mode,
+                      "transcript_source": "speech-to-text" if stt_used else ("captions" if paras else "none")}))
 
 
 if __name__ == "__main__":
