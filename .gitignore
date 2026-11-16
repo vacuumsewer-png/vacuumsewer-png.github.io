@@ -1,0 +1,7 @@
+# Generated media and caches. Videos are regenerated from their recorded seeds.
+*.mp4
+*.wav
+*.mkv
+__pycache__/
+*.pyc
+node_modules/
