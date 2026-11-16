@@ -14,6 +14,9 @@ import time
 
 from engine import audio, pipeline
 
+SCENES = sorted(f[:-3] for f in os.listdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), "scenes"))
+                if f.endswith(".py") and not f.startswith("_"))
+
 
 def search(scene_mod, n, workers):
     """Simulate seeds 1..n without rendering and rank them by the scene's drama score."""
@@ -24,7 +27,7 @@ def search(scene_mod, n, workers):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("scene", choices=["territory"])
+    ap.add_argument("scene", choices=SCENES)
     ap.add_argument("--seed", type=int, help="render this seed (default: search for the most dramatic one)")
     ap.add_argument("--seeds", type=int, default=600, help="seeds to score when --seed is not given")
     ap.add_argument("--out", default="out")
