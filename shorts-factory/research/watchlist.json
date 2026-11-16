@@ -1,0 +1,673 @@
+{
+ "about": "Watchlist for research/track.py. counter_example=true marks channels that failed (kept to see what does not work). channel_id is resolved once and cached here. Add channels with: python3 track.py --add HANDLE",
+ "categories": [
+  "sim",
+  "merge",
+  "marble-flag",
+  "loop3d",
+  "math",
+  "counting",
+  "puzzle",
+  "chess",
+  "quiz",
+  "map"
+ ],
+ "channels": [
+  {
+   "handle": "oddly_coded",
+   "name": "OddlyCoded",
+   "category": "sim",
+   "counter_example": false,
+   "channel_id": "UChWE7drPXbtV7FW2XCE8R9Q",
+   "format": "2D physics and maths sims (Shorts)",
+   "notes": "About says 'Built with code'. Latest-40 Shorts median 77.5K views, max 1M (sorting-algorithm race). Country not shown.",
+   "baseline_2026_11_15": {
+    "joined": "Joined Oct 12, 2026",
+    "subscribers": "3.88K subscribers",
+    "total_views": "7,996,734 views",
+    "video_count": "72 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "BetOnTheColor",
+   "name": "BetOnTheColor",
+   "category": "sim",
+   "counter_example": false,
+   "channel_id": "UCUi8ptfHv024asyaIPtRhxQ",
+   "format": "2D physics sims, pick-a-colour (Shorts)",
+   "notes": "Latest-30 Shorts median 111K, max 5M. Six long compilations at 1.6K-11K views each.",
+   "baseline_2026_11_15": {
+    "joined": "Joined Sep 17, 2026",
+    "subscribers": "34.9K subscribers",
+    "total_views": "32,791,607 views",
+    "video_count": "77 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "Satisfying2DSims",
+   "name": "Satisfying2DSims",
+   "category": "sim",
+   "counter_example": false,
+   "channel_id": "UC2KI15ET6DGIw01qpPzAyjg",
+   "format": "2D ball sims with musical notes (Shorts)",
+   "notes": "Country shown: Georgia. Latest-30 Shorts median 13.5K.",
+   "baseline_2026_11_15": {
+    "joined": "Joined Jul 6, 2026",
+    "subscribers": "31.5K subscribers",
+    "total_views": "43,365,968 views",
+    "video_count": "491 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "BouncyPhysics",
+   "name": "BouncyPhysics",
+   "category": "sim",
+   "counter_example": false,
+   "channel_id": "UC5T1XVC5i8WdGwh1dVetGEg",
+   "format": "2D ball sims, song bounces (Shorts)",
+   "notes": "Country shown: Japan. Latest-30 median 26K. Titles advertise famous songs and Rush E (music IP risk).",
+   "baseline_2026_11_15": {
+    "joined": "Joined Sep 30, 2026",
+    "subscribers": "5.27K subscribers",
+    "total_views": "5,783,740 views",
+    "video_count": "113 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "BounceVerse01",
+   "name": "BounceVerse",
+   "category": "sim",
+   "counter_example": false,
+   "channel_id": "UCDIFKNKnTvRgRxmmb0YUuqQ",
+   "format": "2D physics sims, guess the final form (Shorts)",
+   "notes": "Country shown: Türkiye. About: 'coded, designed and voiced by me ... no stock footage, no reuploads'.",
+   "baseline_2026_11_15": {
+    "joined": "Joined Jul 18, 2026",
+    "subscribers": "6.44K subscribers",
+    "total_views": "8,335,572 views",
+    "video_count": "146 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "ChaosLoopLab",
+   "name": "Chaos Loop Lab",
+   "category": "sim",
+   "counter_example": false,
+   "channel_id": "UCy1itEbMLwR1iZJQ8OUqGZQ",
+   "format": "Physics races, plinko (Shorts)",
+   "notes": "About: 'built in our own simulator ... This is not reused footage'. Latest-30 median 5.4K.",
+   "baseline_2026_11_15": {
+    "joined": "Joined Oct 16, 2026",
+    "subscribers": "1.06K subscribers",
+    "total_views": "4,361,135 views",
+    "video_count": "150 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "d_studio_Loops",
+   "name": "Studio Loops",
+   "category": "sim",
+   "counter_example": false,
+   "channel_id": "UC6eu8y8OVx0RSm0O1WeGnDg",
+   "format": "Coded colour and flag battle loops (Shorts)",
+   "notes": "Country shown: India. About: 'made with code'. Titles promote its own generator ('Make videos like this, link in bio'), so treat as vendor. Latest-48 median 8,350.",
+   "baseline_2026_11_15": {
+    "joined": "Joined Oct 12, 2026",
+    "subscribers": "4.12K subscribers",
+    "total_views": "9,725,171 views",
+    "video_count": "241 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "foryastudios",
+   "name": "foryastudios",
+   "category": "sim",
+   "counter_example": false,
+   "channel_id": "UCXG6mvkJWPwAuw4zxLFWIOQ",
+   "format": "Physics and maths sims (Shorts)",
+   "notes": "About: 'every frame is computed from the actual equations'. Latest-30 median 3,650.",
+   "baseline_2026_11_15": {
+    "joined": "Joined Sep 27, 2026",
+    "subscribers": "1.64K subscribers",
+    "total_views": "2,277,801 views",
+    "video_count": "124 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "memelandmerge",
+   "name": "Memeland",
+   "category": "merge",
+   "counter_example": false,
+   "channel_id": "UCXBj3PKwOZKo77g6S60g-Yg",
+   "format": "Merge-to-final-form physics sim (Shorts)",
+   "notes": "Country shown: Brazil. Only code-style channel in sample past 10M within 30 days. Latest-48 median 161K. Uses footballers, GTA, Godzilla, car brands (IP risk); sprite source unverified.",
+   "baseline_2026_11_15": {
+    "joined": "Joined Oct 20, 2026",
+    "subscribers": "49.6K subscribers",
+    "total_views": "34,586,326 views",
+    "video_count": "83 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "EndformTV",
+   "name": "Endform TV",
+   "category": "merge",
+   "counter_example": false,
+   "channel_id": "UCd_BbSSaMnFW-KtQgRWq0jw",
+   "format": "Merge-to-final-form and song-bounce sims (Shorts)",
+   "notes": "Country shown: Germany. Latest-30 median 26K, max 1.3M. Brand logos and named song melodies in titles.",
+   "baseline_2026_11_15": {
+    "joined": "Joined Oct 22, 2026",
+    "subscribers": "9.29K subscribers",
+    "total_views": "7,934,011 views",
+    "video_count": "48 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "super_balls_3000",
+   "name": "Super Balls 3000",
+   "category": "merge",
+   "counter_example": false,
+   "channel_id": "UCbuEdjv4mhcQ9W5ZrdqwpLQ",
+   "format": "Merge and marble-run sims (Shorts)",
+   "notes": "Country shown: France. Median 58.5K across 24 Shorts, max 1.3M.",
+   "baseline_2026_11_15": {
+    "joined": "Joined Oct 23, 2026",
+    "subscribers": "8.47K subscribers",
+    "total_views": "6,793,961 views",
+    "video_count": "24 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "MarbleDreamLeague",
+   "name": "Marble Dream League",
+   "category": "marble-flag",
+   "counter_example": false,
+   "channel_id": "UCgmRkx82oK0XkFLwAR6haDw",
+   "format": "Football ranking marble races (Shorts)",
+   "notes": "Country shown: Türkiye. Latest-30 median 173.5K, max 4.4M. Club, player and competition names (trademark exposure).",
+   "baseline_2026_11_15": {
+    "joined": "Joined Sep 22, 2026",
+    "subscribers": "11.5K subscribers",
+    "total_views": "27,776,338 views",
+    "video_count": "126 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "IndonesiaVsDunia",
+   "name": "Indonesia vs Dunia",
+   "category": "marble-flag",
+   "counter_example": false,
+   "channel_id": "UChc0SF0g7aGe_RH4ivxWDMA",
+   "format": "2D countryball cartoon mini-games: find the one Indonesia flag-ball among thousands, shell-game 'follow Indonesia', with Indonesian headline text and speech bubbles. About says 25-second original animations with real figures. No presenter. Audio not verifiable.",
+   "notes": "WINNER, 34 days old (fetched 08:19Z). Highest cadence: RSS shows 6 and 7 uploads on Nov 13 and 14. Latest 48 Shorts (Nov 3-15) total 24.5M, max 4.0M, many 30K-1M, so views are spread. Country field says Croatia. Uploads ",
+   "baseline_2026_11_15": {
+    "joined": "Joined Oct 12, 2026",
+    "subscribers": "47.1K subscribers",
+    "total_views": "54,858,379 views",
+    "video_count": "136 videos"
+   },
+   "source": "research 2026-11-15, track evidence-shorts"
+  },
+  {
+   "handle": "GridLoops",
+   "name": "Grid Loops",
+   "category": "loop3d",
+   "counter_example": false,
+   "channel_id": "UCE_QdlUc3c8bESZ1zuEZiNQ",
+   "format": "Blender-rendered isometric loops: grids of coloured cubes, tiles and wooden tables that stack, sink and drop into the floor. About: 'Every loop is an original scene, modeled, animated and rendered in Blender. No talking.' Duration not verifiable.",
+   "notes": "WINNER, 46 days old (fetched 08:19Z). 2 uploads/day. Flattest distribution: 22 of 65 over 1M, 61 over 100K, none under 10K, median 541K, top three = 31%. Top 15,890,427 (Oct 23) and 10,183,928 (Oct 15, day 15). First upl",
+   "baseline_2026_11_15": {
+    "joined": "Joined Sep 30, 2026",
+    "subscribers": "19K subscribers",
+    "total_views": "111,837,001 views",
+    "video_count": "65 videos"
+   },
+   "source": "research 2026-11-15, track evidence-shorts"
+  },
+  {
+   "handle": "BounceTheoryy",
+   "name": "Bounce Theory",
+   "category": "loop3d",
+   "counter_example": false,
+   "channel_id": "UCKPFnQaxJFuIiuq_OVHCFCQ",
+   "format": "Blender physics animation: glossy bowling balls and basketballs shatter into triangular shards on a coloured honeycomb grid, then rebuild in reverse. About: 'Original 3D animations created by Bounce Theory using Blender.' No presenter. Audio and duration not verifiable.",
+   "notes": "WINNER after day 30, 43 days old (fetched 08:18Z). 3 uploads/day. Breakout was late: 15 uploads from Nov 10-15 hold 57.0M of 98.5M (each 1.0-9.8M); uploads from Oct 25-Nov 2 show 39K-531K. 10M inside first 30 days not es",
+   "baseline_2026_11_15": {
+    "joined": "Joined Oct 3, 2026",
+    "subscribers": "38K subscribers",
+    "total_views": "98,501,686 views",
+    "video_count": "87 videos"
+   },
+   "source": "research 2026-11-15, track evidence-shorts"
+  },
+  {
+   "handle": "layerloopshorts",
+   "name": "layerloopshorts",
+   "category": "loop3d",
+   "counter_example": false,
+   "channel_id": "UCl6V5A-VV-597wcRMFd1GKg",
+   "format": "Blender 3D satisfying loops (Shorts)",
+   "notes": "Country shown: United States. About: 'created from scratch in Blender'. Latest-30 median 28.5K, max 4.2M.",
+   "baseline_2026_11_15": {
+    "joined": "Joined Oct 7, 2026",
+    "subscribers": "1.85K subscribers",
+    "total_views": "5,826,204 views",
+    "video_count": "40 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "InfiniteLayersStudio",
+   "name": "Infinite Layers",
+   "category": "loop3d",
+   "counter_example": false,
+   "channel_id": "UCdGngJYw_Z0VrLxTYTGGqdw",
+   "format": "Blender 3D satisfying loops (Shorts)",
+   "notes": "Country shown: Italy. Median 27.5K, max 1.8M. Only 564 subscribers at 2.8M views.",
+   "baseline_2026_11_15": {
+    "joined": "Joined Nov 2, 2026",
+    "subscribers": "564 subscribers",
+    "total_views": "2,815,644 views",
+    "video_count": "30 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "watchthemath",
+   "name": "watchthemath",
+   "category": "math",
+   "counter_example": false,
+   "channel_id": "UCuwH8JO0L3tGuxMsW_d9ysA",
+   "format": "Maths and probability animation Shorts",
+   "notes": "About: 'Using Manus and Python' (AI agent plus code). Latest-30 median only 2,250, so early virality has decayed.",
+   "baseline_2026_11_15": {
+    "joined": "Joined Jul 18, 2026",
+    "subscribers": "8.82K subscribers",
+    "total_views": "17,953,015 views",
+    "video_count": "316 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "MathImpressions",
+   "name": "Math Impressions",
+   "category": "math",
+   "counter_example": false,
+   "channel_id": "UCxeh7o3z2tUpxky8-FbX_Jg",
+   "format": "Maths function sound visualisations (Shorts)",
+   "notes": "Country shown: Poland. Latest-30 median 1,750, max 253K. Under 1,000 subscribers at 1.5M views.",
+   "baseline_2026_11_15": {
+    "joined": "Joined Oct 17, 2026",
+    "subscribers": "868 subscribers",
+    "total_views": "1,505,825 views",
+    "video_count": "92 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "BonTick",
+   "name": "BonTick",
+   "category": "counting",
+   "counter_example": false,
+   "channel_id": "UCboDsFcIZalfcUYvNaA5Jrw",
+   "format": "MIDI number-counting visuals (Shorts and long)",
+   "notes": "Latest-14 Shorts median 200K, max 1.5M. Production method not stated.",
+   "baseline_2026_11_15": {
+    "joined": "Joined Apr 29, 2026",
+    "subscribers": "23.7K subscribers",
+    "total_views": "64,943,685 views",
+    "video_count": "367 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "PianoCoozz",
+   "name": "PianoCoozz",
+   "category": "counting",
+   "counter_example": false,
+   "channel_id": "UCMbVOg7K22Hai7lczcpqACQ",
+   "format": "MIDI number-counting visuals (Shorts)",
+   "notes": "Country shown: United States. Latest-30 median 63K.",
+   "baseline_2026_11_15": {
+    "joined": "Joined Apr 16, 2026",
+    "subscribers": "25K subscribers",
+    "total_views": "48,793,527 views",
+    "video_count": "237 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "SharpEyeTest",
+   "name": "SharpEyeTest",
+   "category": "puzzle",
+   "counter_example": false,
+   "channel_id": "UCsq-T3KiDa7ZdE7Jdni4qQA",
+   "format": "Find-the-odd-one and eye-test Shorts",
+   "notes": "Country shown: Israel. Best new channel found in this format; 3,605 views per video.",
+   "baseline_2026_11_15": {
+    "joined": "Joined Oct 17, 2026",
+    "subscribers": "387 subscribers",
+    "total_views": "587,667 views",
+    "video_count": "163 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "OddEyes9",
+   "name": "OddEyes",
+   "category": "puzzle",
+   "counter_example": false,
+   "channel_id": "UCIXzWxF9WI0ORe6dJGelpHw",
+   "format": "'Find the player' puzzle: 5x5 numbered grid of AI-caricature footballer faces (Ronaldo, Neymar, Mbappe, Yamal), headline such as FIND NEYMAR, timer bar, like/subscribe stickers, stadium background. About: 'spot Ronaldo, Neymar or Haaland in 10 seconds. New challenge every day.'",
+   "notes": "WINNER with a data anomaly, 37 days old (fetched 08:26Z). About 1/day. Top 5,902,849 (Oct 20, day 11) and 4,789,961 (Oct 22); 5 over 1M. The 32 listed videos sum to only 22.3M against 88.7M on the About page; the gap is ",
+   "baseline_2026_11_15": {
+    "joined": "Joined Oct 9, 2026",
+    "subscribers": "56.6K subscribers",
+    "total_views": "88,727,409 views",
+    "video_count": "33 videos"
+   },
+   "source": "research 2026-11-15, track evidence-shorts"
+  },
+  {
+   "handle": "BoardBrawl",
+   "name": "BoardBrawl",
+   "category": "chess",
+   "counter_example": false,
+   "channel_id": "UC0Kp0e0DBzk-XkMw9A1rdTw",
+   "format": "Chess opening-trap Shorts",
+   "notes": "Shorts only. Median 82K across 18 Shorts, max 3.8M (Englund Gambit).",
+   "baseline_2026_11_15": {
+    "joined": "Joined Nov 6, 2026",
+    "subscribers": "6.99K subscribers",
+    "total_views": "6,262,718 views",
+    "video_count": "18 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "Chessmaxxing-k7r",
+   "name": "Chessmaxxing",
+   "category": "chess",
+   "counter_example": false,
+   "channel_id": "UCJEpOzCTsoP4AZnOSiHJ1Fg",
+   "format": "Chess opening-trap Shorts",
+   "notes": "About: '100% human-made animations'. Median 61K across 15 Shorts, max 1.9M.",
+   "baseline_2026_11_15": {
+    "joined": "Joined Oct 29, 2026",
+    "subscribers": "4.99K subscribers",
+    "total_views": "3,944,654 views",
+    "video_count": "15 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "CHESSINCISO",
+   "name": "CHESS INCISO",
+   "category": "chess",
+   "counter_example": false,
+   "channel_id": "UCqhZcUU6dDzyJ8kM1CGaS8g",
+   "format": "Chess trap Shorts",
+   "notes": "Country shown: India. Latest-30 median 23K.",
+   "baseline_2026_11_15": {
+    "joined": "Joined Jul 11, 2026",
+    "subscribers": "5.28K subscribers",
+    "total_views": "3,077,479 views",
+    "video_count": "92 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "EliteTriviaYT",
+   "name": "Elite Trivia",
+   "category": "quiz",
+   "counter_example": false,
+   "channel_id": "UCsEQvwDvASKdHKJznhaJpsA",
+   "format": "Word and country quiz Shorts (missing letters, unscramble)",
+   "notes": "Country shown: United States. Shorts tab only. Median 35K, max 1.3M.",
+   "baseline_2026_11_15": {
+    "joined": "Joined Oct 21, 2026",
+    "subscribers": "38.5K subscribers",
+    "total_views": "2,900,568 views",
+    "video_count": "19 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "Geography_Enjoyer",
+   "name": "Geography Enjoyer",
+   "category": "quiz",
+   "counter_example": false,
+   "channel_id": "UC08LM6Wyz20XmS-at7hSo8Q",
+   "format": "Guess-the-flag Shorts",
+   "notes": "Country shown: United States. Created late 2025, not 2026. Latest-30 median 36.5K.",
+   "baseline_2026_11_15": {
+    "joined": "Joined Dec 27, 2025",
+    "subscribers": "11.1K subscribers",
+    "total_views": "33,454,979 views",
+    "video_count": "348 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "TrueOrFalseMaps",
+   "name": "TrueOrFalseMaps",
+   "category": "quiz",
+   "counter_example": false,
+   "channel_id": "UChj826Tw-5Gr0Wv52RfwHsw",
+   "format": "True-or-false map fact Shorts",
+   "notes": "About: 'Real facts with sources'. Latest-30 median 3.8K.",
+   "baseline_2026_11_15": {
+    "joined": "Joined Oct 12, 2026",
+    "subscribers": "3.12K subscribers",
+    "total_views": "2,932,385 views",
+    "video_count": "106 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "riddlerush-95",
+   "name": "Riddle Rush",
+   "category": "quiz",
+   "counter_example": false,
+   "channel_id": "UCn2OrESUppSQpZAvKhrvQDg",
+   "format": "Riddle Shorts",
+   "notes": "Country shown: India. Sampled Shorts at 30K-90K views.",
+   "baseline_2026_11_15": {
+    "joined": "Joined May 11, 2026",
+    "subscribers": "96.8K subscribers",
+    "total_views": "2,710,336 views",
+    "video_count": "158 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "titomaps",
+   "name": "titomaps",
+   "category": "map",
+   "counter_example": false,
+   "channel_id": "UCrxCStff1ykyxCLwJlbSn4g",
+   "format": "Map meme and fact Shorts",
+   "notes": "Country shown: United States. Latest-14 median 106K. Very low subscriber conversion.",
+   "baseline_2026_11_15": {
+    "joined": "Joined Apr 12, 2026",
+    "subscribers": "3.18K subscribers",
+    "total_views": "29,539,993 views",
+    "video_count": "182 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "WhatifMap07",
+   "name": "Whatif Map",
+   "category": "map",
+   "counter_example": false,
+   "channel_id": "UCyPOYIcB5WP36MSEhznJcXw",
+   "format": "Map animation and country comparison Shorts",
+   "notes": "About: 'original map animations'.",
+   "baseline_2026_11_15": {
+    "joined": "Joined Sep 30, 2026",
+    "subscribers": "3.03K subscribers",
+    "total_views": "4,190,842 views",
+    "video_count": "43 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "HonestMaps",
+   "name": "HonestMaps",
+   "category": "map",
+   "counter_example": false,
+   "channel_id": "UCgafYJ5XMEmPlOgLCgHhRjA",
+   "format": "Geography fact map Shorts",
+   "notes": "Country shown: United States. Credits NASA Visible Earth and Natural Earth. Latest-30 median 11.5K.",
+   "baseline_2026_11_15": {
+    "joined": "Joined Oct 9, 2026",
+    "subscribers": "1.84K subscribers",
+    "total_views": "2,319,430 views",
+    "video_count": "98 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "DPSatisfyingBalls",
+   "name": "DPSatisfyingBalls",
+   "category": "sim",
+   "counter_example": true,
+   "channel_id": "UCHy2KaHgzo1EM2pkRjJuFLQ",
+   "format": "Ball sims and marble races (Shorts)",
+   "notes": "COUNTER-EXAMPLE. Country shown: United States. Latest-30 Shorts median 4 views.",
+   "baseline_2026_11_15": {
+    "joined": "Joined Jun 30, 2026",
+    "subscribers": "335 subscribers",
+    "total_views": "534,368 views",
+    "video_count": "922 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "BounceLabSimss",
+   "name": "BounceLabSimss",
+   "category": "sim",
+   "counter_example": true,
+   "channel_id": "UCMu0izz7oXj-ZFSW08sIyOQ",
+   "format": "Ball sims (Shorts)",
+   "notes": "COUNTER-EXAMPLE. 214 uploads in 22 days; latest-30 median 1.2K.",
+   "baseline_2026_11_15": {
+    "joined": "Joined Oct 24, 2026",
+    "subscribers": "149 subscribers",
+    "total_views": "232,231 views",
+    "video_count": "214 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "icantstop_watching",
+   "name": "icantstop_watching",
+   "category": "sim",
+   "counter_example": true,
+   "channel_id": "UC3uk60RKxa2oD2h3vlc6W5Q",
+   "format": "Ball and marble sims (Shorts)",
+   "notes": "COUNTER-EXAMPLE. Country shown: Indonesia. 301 uploads in 11 days.",
+   "baseline_2026_11_15": {
+    "joined": "Joined Nov 4, 2026",
+    "subscribers": "28 subscribers",
+    "total_views": "23,066 views",
+    "video_count": "301 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "FactBlinkHQ",
+   "name": "FactBlinkHQ",
+   "category": "merge",
+   "counter_example": true,
+   "channel_id": "UC-9RMAGXH5E-qiiJQqqKI2g",
+   "format": "Merge and evolution sims (Shorts)",
+   "notes": "COUNTER-EXAMPLE. Latest-30 median 57 views.",
+   "baseline_2026_11_15": {
+    "joined": "Joined Oct 22, 2026",
+    "subscribers": "11 subscribers",
+    "total_views": "20,399 views",
+    "video_count": "114 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "FlagBattle2D",
+   "name": "FlagBattle2D",
+   "category": "marble-flag",
+   "counter_example": true,
+   "channel_id": "UC3S3xxz8hTke7y7DsyVrmLg",
+   "format": "Country flag elimination sims (Shorts)",
+   "notes": "COUNTER-EXAMPLE. Latest-30 median 1,000, max 1,100.",
+   "baseline_2026_11_15": {
+    "joined": "Joined Oct 13, 2026",
+    "subscribers": "276 subscribers",
+    "total_views": "274,435 views",
+    "video_count": "296 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "StockfishTheater",
+   "name": "StockfishTheater",
+   "category": "chess",
+   "counter_example": true,
+   "channel_id": "UC3HzF6WvYF8CjMYHchSdiwA",
+   "format": "Chess mate-in-2 puzzle Shorts",
+   "notes": "COUNTER-EXAMPLE. Latest-30 median 795.",
+   "baseline_2026_11_15": {
+    "joined": "Joined Jun 27, 2026",
+    "subscribers": "57 subscribers",
+    "total_views": "200,166 views",
+    "video_count": "292 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "quiztrap-q6h",
+   "name": "quiztrap",
+   "category": "quiz",
+   "counter_example": true,
+   "channel_id": "UC_JOnrWuUwryPSU-sPGgReg",
+   "format": "Flag, capital and trivia quiz Shorts",
+   "notes": "COUNTER-EXAMPLE. Latest-30 median 115.",
+   "baseline_2026_11_15": {
+    "joined": "Joined Jun 30, 2026",
+    "subscribers": "161 subscribers",
+    "total_views": "94,372 views",
+    "video_count": "473 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  },
+  {
+   "handle": "DataRace_1",
+   "name": "DataRace_1",
+   "category": "map",
+   "counter_example": true,
+   "channel_id": "UCDEHhZxXjJXilMQIMqKqLaA",
+   "format": "Bar-chart race Shorts",
+   "notes": "COUNTER-EXAMPLE. Country shown: India. Latest-30 median 237.",
+   "baseline_2026_11_15": {
+    "joined": "Joined Oct 25, 2026",
+    "subscribers": "38 subscribers",
+    "total_views": "53,517 views",
+    "video_count": "120 videos"
+   },
+   "source": "research 2026-11-15, track evidence-programmatic"
+  }
+ ]
+}

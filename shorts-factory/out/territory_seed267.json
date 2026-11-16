@@ -1,0 +1,112 @@
+{
+  "title": "Which colour wins the most territory? 4-ball paint battle",
+  "description": "Four balls bounce around a tiled arena and paint every tile they roll over. Whoever holds the most tiles when the timer runs out wins.\nThis is an original physics simulation made entirely with code: the motion, the picture and the sound are all generated (seed 267), with no footage, samples or third-party assets.\nDid you call the winner?",
+  "tags": [
+    "physics simulation",
+    "simulation",
+    "bouncing balls",
+    "territory battle",
+    "colour battle",
+    "satisfying",
+    "generative animation",
+    "made with code"
+  ],
+  "made_for_kids": false,
+  "synthetic_media_disclosure": false,
+  "synthetic_media_disclosure_reason": "Clearly stylised 2D animation of abstract shapes; nothing realistic that could be mistaken for real people, places or events.",
+  "seed": 267,
+  "drama": {
+    "seed": 267,
+    "score": 26.157,
+    "winner": "BLUE",
+    "winner_index": 1,
+    "final_tiles": {
+      "YELLOW": 69,
+      "BLUE": 97,
+      "VIOLET": 95,
+      "RED": 59
+    },
+    "final_percent": {
+      "YELLOW": 21.3,
+      "BLUE": 29.94,
+      "VIOLET": 29.32,
+      "RED": 18.21
+    },
+    "margin_tiles": 2,
+    "lead_changes": 9,
+    "leader_at_half": "YELLOW",
+    "winner_led_at_half": false,
+    "winner_took_final_lead_at_s": 23.43,
+    "last_lead_flip_at_s": 24.53,
+    "colours_that_led": 4,
+    "lowest_share_after_6s_percent": 13.27,
+    "biggest_deficit_winner_overcame_tiles": 58,
+    "mean_top2_gap_last_5s_tiles": 6.75,
+    "pickups_collected": [
+      {
+        "kind": "fast",
+        "by": "YELLOW",
+        "at_s": 5.58
+      },
+      {
+        "kind": "grow",
+        "by": "YELLOW",
+        "at_s": 10.07
+      },
+      {
+        "kind": "bomb",
+        "by": "VIOLET",
+        "at_s": 12.67
+      },
+      {
+        "kind": "grow",
+        "by": "BLUE",
+        "at_s": 18.82
+      },
+      {
+        "kind": "bomb",
+        "by": "BLUE",
+        "at_s": 23.22
+      }
+    ]
+  },
+  "seed_search": {
+    "seeds_scored": 600,
+    "seconds": 5.6,
+    "top5": [
+      {
+        "seed": 267,
+        "score": 26.157
+      },
+      {
+        "seed": 36,
+        "score": 25.786
+      },
+      {
+        "seed": 297,
+        "score": 25.761
+      },
+      {
+        "seed": 395,
+        "score": 25.631
+      },
+      {
+        "seed": 453,
+        "score": 25.573
+      }
+    ]
+  },
+  "render": {
+    "frames": 840,
+    "fps": 30,
+    "duration_seconds": 28.0,
+    "audio_seconds": 2.7,
+    "video_seconds": 38.1,
+    "total_seconds": 46.5,
+    "premaster_loudness": {
+      "lufs": -14.1,
+      "lra": 2.5,
+      "true_peak": -1.6
+    }
+  }
+}
