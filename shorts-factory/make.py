@@ -20,7 +20,7 @@ SCENES = sorted(f[:-3] for f in os.listdir(os.path.join(os.path.dirname(os.path.
 
 def search(scene_mod, n, workers):
     """Simulate seeds 1..n without rendering and rank them by the scene's drama score."""
-    with mp.get_context("fork").Pool(workers) as pool:
+    with pipeline.pool(workers) as pool:
         res = pool.map(scene_mod.score_seed, range(1, n + 1), chunksize=8)
     return sorted(res, key=lambda d: (-d["score"], d["seed"]))
 

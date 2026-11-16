@@ -1074,6 +1074,7 @@ class Scene:
 
         base = [au.hz(m) for m in (57, 60, 62, 64, 67)]               # one pitch class per planet (A C D E G)
         prox_sum = np.zeros(n)
+        prox_max = np.zeros(n)
         for i in range(NP):
             p = np.array([self.P(i, float(self.sf[f])) for f in range(NF)])
             r = np.hypot(p[:, 0], p[:, 1])
@@ -1088,7 +1089,9 @@ class Scene:
             wet[:n, 0] += 0.035 * tone * np.cos(a)
             wet[:n, 1] += 0.035 * tone * np.sin(a)
             prox_sum += prox ** 1.5
-        nz = au.noise(rng, DUR, 700, 5200)[:n] * np.minimum(1.0, prox_sum[:len(tt)]) * live      # dive whoosh
+            prox_max = np.maximum(prox_max, prox)
+        # dive whoosh, only on a genuinely close pass: driven by the summed proximity it hissed under the whole video
+        nz = au.noise(rng, DUR, 700, 5200)[:n] * prox_max ** 3 * live
         wet[:n, 0] += 0.05 * nz
         wet[:n, 1] += 0.05 * nz
 

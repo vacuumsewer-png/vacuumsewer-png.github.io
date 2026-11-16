@@ -108,9 +108,9 @@
     "frames": 725,
     "fps": 30,
     "duration_seconds": 24.166666666666668,
-    "audio_seconds": 2.1,
-    "video_seconds": 27.2,
-    "total_seconds": 49.6,
+    "audio_seconds": 3.3,
+    "video_seconds": 45.0,
+    "total_seconds": 48.3,
     "premaster_loudness": {
       "lufs": -14.1,
       "lra": 6.0,

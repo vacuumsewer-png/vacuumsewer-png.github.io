@@ -6,7 +6,6 @@
     "bouncing balls",
     "territory battle",
     "color battle",
-    "colour battle",
     "paint battle",
     "satisfying",
     "made with code"
@@ -75,9 +74,9 @@
     "frames": 840,
     "fps": 30,
     "duration_seconds": 28.0,
-    "audio_seconds": 3.3,
-    "video_seconds": 42.3,
-    "total_seconds": 45.6,
+    "audio_seconds": 4.2,
+    "video_seconds": 50.3,
+    "total_seconds": 54.6,
     "premaster_loudness": {
       "lufs": -14.1,
       "lra": 2.5,
