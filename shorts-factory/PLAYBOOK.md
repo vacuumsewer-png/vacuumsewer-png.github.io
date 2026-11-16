@@ -64,9 +64,13 @@ Scenes are discovered from `scenes/*.py`. Videos are not committed; they are reg
 - Keep main-session tool calls few; batch shell work into single commands.
 - If the usage limit interrupts a build, check the files on disk before re-running anything: agents usually finish most of the work.
 
-## Publishing and viewer interaction (blocked on the owner)
+## Where the work runs (owner, 16 Nov)
 
-The agent cannot create or sign in to a YouTube channel. Until the owner hands over channel access, nothing is published and no comments can be answered. When access exists: claim @predixel, apply `channel/identity.md` and the art in `channel/`, upload two a day per `plan/calendar.md`, pin the prediction comment and follow `plan/engagement.md`.
+All work now runs in a session on the owner's own computer: research, production and everything on YouTube. The owner signs in to YouTube in that machine's browser; never ask for a password or code in chat. The earlier cloud session and its daily task are stopped. Rendered videos live only in `shorts-factory/out/` on that computer and are never committed. There is no scheduled task on the computer yet: set one up there if a scheduling tool exists, otherwise run the daily routine at the start of each working session.
+
+## Publishing and viewer interaction (needs the owner signed in on this computer)
+
+The agent never signs in itself. Once the owner is signed in to YouTube in this computer's browser: claim @predixel, apply `channel/identity.md` and the art in `channel/`, upload two a day per `plan/calendar.md`, pin the prediction comment and follow `plan/engagement.md`.
 
 ## Inventory
 
@@ -87,3 +91,4 @@ All four: sound verified by measurement only, never heard; picture verified from
 - 16 Nov: left open on purpose: territory opens on an empty board (colour splash on frame 0 needs a rule change and new seed); fusetag late rounds are sparse (closing walls would fix it); trailtrap's first crash is at 9.3 s, its duel runs at over 3x speed and frame 0 shows a half-typed question; eventhorizon's winner is the least-drag planet and its clearance is thin on a phone; all four share the 2 s zoom-in and half-second reset. Revisit only if retention data points at them.
 - 16 Nov: channel art checked by the owner agent at avatar sizes 300, 98 and 36 px and banner safe area; reads cleanly. Independent review of identity, engagement plan and tracker still not done; fold into the next batch review.
 - 16 Nov: owner set the audience to the United States. Video 1 re-rendered with COLOR (same seed, same result); plans and channel kit switched to American spelling; upload slots set to 12:00 and 19:00 US Eastern as an unverified starting point.
+- 16 Nov: owner moved all work to a session on their own computer and ended cloud work. Inventory at handover: four finished videos (regenerate from the seeds in out/*.json); next builds are Pressure Pie and Fuse Race.
