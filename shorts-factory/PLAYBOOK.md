@@ -9,6 +9,7 @@ Source of truth for the agent that runs this channel. Keep it short and current.
 - Be careful with usage: it has run out three times. See "Usage discipline".
 - Quality bar: the best in the format. Every video is reviewed before it counts as inventory.
 - Owner's choices: no spoken language, free tools only, niche chosen by research (code-made prediction simulations).
+- Audience: United States (owner, 16 Nov). American English in everything viewers see; upload slots in US Eastern time (plan/calendar.md). The channel's country-of-residence setting stays the owner's real country: it is used for Partner Program eligibility and payments.
 
 ## Hard facts (verified 15 Nov 2026 unless marked)
 
@@ -33,6 +34,7 @@ Source of truth for the agent that runs this channel. Keep it short and current.
 9. The question, the rule that decides it, the result line and the title must agree. State the winning rule on screen in the hook (for example LAST ONE LEFT WINS).
 10. No hidden numbers decide the outcome: anything that drives the result is visible from frame 0. A deciding near-miss must be readable on a phone; gate seeds on it.
 11. Vary the skeleton, not only the mechanic: hook placement and motion, end-card wording, length and contestant shape differ between neighbouring uploads. Videos that share a look are never scheduled next to each other.
+13. All on-screen text, titles, descriptions, tags and comments use American spelling (color, favorite, center).
 12. Each description is written for its video and names every rule (pickups, steering, speed-ups). No shared boilerplate paragraph. Say "no footage, samples or stock media".
 
 ## Commands
@@ -84,3 +86,4 @@ All four: sound verified by measurement only, never heard; picture verified from
 - 16 Nov: batch review of videos 1 to 4 found 1 blocker, 10 majors, 9 minors; fixes applied and re-rendered (eventhorizon seed 260 to 821, trailtrap seed 214 to 2123). Rules 9 to 12 added from it. Upload order changed so territory and fusetag (similar look) are not neighbours.
 - 16 Nov: left open on purpose: territory opens on an empty board (colour splash on frame 0 needs a rule change and new seed); fusetag late rounds are sparse (closing walls would fix it); trailtrap's first crash is at 9.3 s, its duel runs at over 3x speed and frame 0 shows a half-typed question; eventhorizon's winner is the least-drag planet and its clearance is thin on a phone; all four share the 2 s zoom-in and half-second reset. Revisit only if retention data points at them.
 - 16 Nov: channel art checked by the owner agent at avatar sizes 300, 98 and 36 px and banner safe area; reads cleanly. Independent review of identity, engagement plan and tracker still not done; fold into the next batch review.
+- 16 Nov: owner set the audience to the United States. Video 1 re-rendered with COLOR (same seed, same result); plans and channel kit switched to American spelling; upload slots set to 12:00 and 19:00 US Eastern as an unverified starting point.

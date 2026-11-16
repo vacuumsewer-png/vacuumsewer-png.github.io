@@ -4,6 +4,8 @@ Day 1 is the day of the first upload, not a calendar date.
 
 ## Week 1: fourteen different ideas
 
+Audience: United States. Upload times are a starting assumption, not verified: slot A 12:00 and slot B 19:00 US Eastern. Replace them with the channel's own viewer-activity data as soon as Studio shows it.
+
 | Day | Slot A | Slot B |
 |---|---|---|
 | 1 | TERRITORY BATTLE (built) | EVENT HORIZON (built) |
@@ -19,7 +21,7 @@ Ordering rule: strongest one-second hooks first; never two similar-looking mecha
 ## Days 8 to 30: decided from our own numbers
 
 Each day, rank our published videos by engaged views and by "viewed versus swiped away".
-- Two of every three slots: a rule-changing variant of a top-three mechanic (new rule, new arena, new stake; never only new colours or numbers).
+- Two of every three slots: a rule-changing variant of a top-three mechanic (new rule, new arena, new stake; never only new colors or numbers).
 - One of every three slots: a new mechanic from plan/mechanics.md or from viewer suggestions.
 - Drop a mechanic after two videos that both land in our bottom third.
 - Before day 8 there is no data: follow the table above.
@@ -27,4 +29,4 @@ Each day, rank our published videos by engaged views and by "viewed versus swipe
 ## Titles
 
 At most 60 characters, a plain question or statement of the stake, no claims the video does not deliver.
-Pattern examples: "Which colour wins the most territory?", "Who is holding it at zero?", "Which planet falls in last?"
+Pattern examples: "Which color wins the most territory?", "Who is holding it at zero?", "Which planet falls in last?"

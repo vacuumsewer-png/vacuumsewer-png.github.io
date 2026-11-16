@@ -9,13 +9,13 @@ Prerequisite: comments must be on. Videos marked "made for kids" have comments d
 Formula: **one question about the outcome + the options as emoji or numbers + "before the end"**. Nothing else.
 - Post it from the channel account and pin it right after publishing, before most viewers arrive. [H]
 - 15 words at most. Present tense, digits instead of number words, no idioms, no slang, no jokes that need a shared culture.
-- The options match what is on screen (same colours, same numbers), so a viewer can answer with one emoji.
+- The options match what is on screen (same colors, same numbers), so a viewer can answer with one emoji.
 - Never reveal the result. No links. No "subscribe" or "like".
 - Write a new one for each video. The same pinned text everywhere reads as a template to viewers and to reviewers. [H]
 - If the video came from a viewer idea, the pinned comment also carries the credit (section 3).
 
 Ready examples (swap in the options shown in the video):
-1. Which colour wins? 🔴 🔵 🟢 🟡 Write your pick before the end.
+1. Which color wins? 🔴 🔵 🟢 🟡 Write your pick before the end.
 2. How many balls are left at the end? Guess a number first.
 3. Left or right? ⬅️ ➡️ Pick one, then watch.
 4. Will it get out? 👍 yes or 👎 no. Answer before the end.
@@ -43,7 +43,7 @@ Speed, counted from publishing [H]:
 
 Tone and length:
 - One line, about 15 words at most; "how is it made" may take two lines. Simple English, one emoji at most, no sarcasm (it does not translate).
-- Be specific: name the colour, the second, the number. Ask one follow-up question at most, and only if the answer helps a future video.
+- Be specific: name the color, the second, the number. Ask one follow-up question at most, and only if the answer helps a future video.
 - Never argue. Give one calm factual answer, then stop, even if they answer back. For abuse: "Hide user from channel", no reply.
 - Never ask for subscriptions, likes or shares in a reply. No links. No promised dates.
 - Vary the wording. The templates are drafts: change the detail in { } every time and never paste one sentence many times in a row.
@@ -52,9 +52,9 @@ Tone and length:
 
 | # | Comment type | Reply draft |
 |---|---|---|
-| 1 | Called it | Good call. What made you pick {colour}? |
-| 2 | Called it | You saw it early. {colour} was behind until second {n}. |
-| 3 | Guessed wrong | So close. {colour} led almost to the end. |
+| 1 | Called it | Good call. What made you pick {color}? |
+| 2 | Called it | You saw it early. {color} was behind until second {n}. |
+| 3 | Guessed wrong | So close. {color} led almost to the end. |
 | 4 | Rigged | No editing. The code runs the physics, and the result is what you see. |
 | 5 | Rigged, with detail | Fair question. I run many random starts and post the close ones. I never change a result. |
 | 6 | How is this made | Python code. It draws every frame and makes the sound. No game engine. |
@@ -64,7 +64,7 @@ Tone and length:
 | 10 | Mechanic idea, usable | Good idea. It is on the list. If we build it, we credit you. |
 | 11 | Mechanic idea, not usable | Thank you. I can't use {brand or song}, but {close version} could work. Would you watch that? |
 | 12 | Complaint: slow or long | You are right, {part} is slow. The next one is shorter. |
-| 13 | Complaint: hard to see | Thank you. The next videos use shapes or numbers too, not only colours. |
+| 13 | Complaint: hard to see | Thank you. The next videos use shapes or numbers too, not only colors. |
 | 14 | Other language | {Thank you in their language} 🙌 Which one did you pick? |
 | 15 | Bot or spam | No reply, no heart. Report as spam, hide the user, add the repeated phrase to blocked words. |
 
@@ -77,7 +77,7 @@ Notes:
 
 1. Log each usable suggestion the day it arrives: date, handle, video, exact words, status (new, planned, built, or rejected with the reason).
 2. Filter: visibly different from past mechanics, possible in our engine, no third-party brands, characters or songs, nothing cruel or unsafe.
-3. Build it. Mark it on screen without words, for example a small speech-bubble icon [H], so "viewer idea" videos are recognisable in any language.
+3. Build it. Mark it on screen without words, for example a small speech-bubble icon [H], so "viewer idea" videos are recognizable in any language.
 4. Credit in three places: the description ("Idea: @handle"), the pinned comment ("This was @handle's idea. What do we test next?") and a reply on the original comment ("Your idea is live. It is the newest Short on the channel.").
 5. Same idea from several people: credit the first and say "first to suggest". Handle only, no avatars and no comment screenshots. Remove the credit if the viewer asks.
 
@@ -88,21 +88,21 @@ Cadence when available [H]: two posts a week, one poll and one result or behind-
 
 Drafts ({ } = fill with true values only):
 1. Poll: "What do we simulate next?" Options: Magnets / Gravity flips every 5 seconds / Balls split on every hit / The arena shrinks.
-2. Poll: "Tomorrow: 4 colours, 1 exit, 100 balls each. Who wins?" Options: Red / Blue / Green / Yellow.
-3. Result: "{x}% of you picked {colour}. The winner was {colour}. Were you right?" Image: the last frame.
+2. Poll: "Tomorrow: 4 colors, 1 exit, 100 balls each. Who wins?" Options: Red / Blue / Green / Yellow.
+3. Result: "{x}% of you picked {color}. The winner was {color}. Were you right?" Image: the last frame.
 4. Behind the code: "This video is {n} lines of Python. No game engine. What should the code do next?" Image: a debug frame or a few real lines.
 5. Poll: "A bug this week: {what really happened} 😅 Do you want to see the failed runs?" Options: Yes / No.
 6. Thank you: "{n} of you are here now. Thank you. You choose the rule for the next one." Options: 1,000 balls / Zero gravity / One ball, one tiny exit / Everything doubles.
 
 ## 4. On-video devices (no begging)
 
-- **Question in the first second.** Frame 1 shows the stake in four words at most ("Which colour wins?") plus the option chips. The title asks the same question. No intro, no logo. [H]
+- **Question in the first second.** Frame 1 shows the stake in four words at most ("Which color wins?") plus the option chips. The title asks the same question. No intro, no logo. [H]
 - **A visible stake.** A scoreboard, counter, timer, finish line or "alive" row shows who leads at every moment. Lead changes are the content, so post runs that have them.
 - **An honest reveal.** The result is shown clearly, the winner is marked, and it stays on screen for about a second [H]. Never cut before the result, never use "wait for it" when nothing happens, never edit a run to look closer than it was. Choosing which run to post is fine; changing a result is not.
 - **A loop.** The last frame resets into the first so a replay feels natural. The loop comes after the full reveal, never in place of it.
 - **A wordless vote for the next video.** Two icons and "?" for one second at the end, in one video in three at most [H], so it does not become a template.
-- **A season table** [H, optional]. Count wins per colour across videos and post the table in pinned comments or posts. Viewers pick a side and come back. It must be exact.
-- **Readable for everyone.** Colour plus shape or number (colour-blind viewers), marks large enough for small phones, and a stake that works with the sound off.
+- **A season table** [H, optional]. Count wins per color across videos and post the table in pinned comments or posts. Viewers pick a side and come back. It must be exact.
+- **Readable for everyone.** Color plus shape or number (color-blind viewers), marks large enough for small phones, and a stake that works with the sound off.
 - **Episode number** in a corner ("#07"), so viewers can refer to a video in any language.
 - Not used: "like if you were right", "subscribe to see the winner", "99% fail", countdowns to nothing, arrows pointing at the subscribe button.
 
