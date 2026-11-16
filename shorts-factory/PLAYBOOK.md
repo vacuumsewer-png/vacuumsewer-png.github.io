@@ -66,7 +66,7 @@ Scenes are discovered from `scenes/*.py`. Videos are not committed; they are reg
 
 ## Where the work runs (owner, 16 Nov)
 
-All work now runs in a session on the owner's own computer: research, production and everything on YouTube. The owner signs in to YouTube in that machine's browser; never ask for a password or code in chat. The earlier cloud session and its daily task are stopped. Rendered videos live only in `shorts-factory/out/` on that computer and are never committed. There is no scheduled task on the computer yet: set one up there if a scheduling tool exists, otherwise run the daily routine at the start of each working session.
+All work now runs in a session on the owner's own computer: research, production and everything on YouTube. The owner signs in to YouTube in that machine's browser; never ask for a password or code in chat. The earlier cloud session and its daily task are stopped. Rendered videos live only in `shorts-factory/out/` on that computer and are never committed. A daily scheduled task `predixel-daily` (Claude desktop app, 09:00 IST) runs the daily routine.
 
 ## Publishing and viewer interaction (needs the owner signed in on this computer)
 
@@ -81,7 +81,7 @@ The agent never signs in itself. Once the owner is signed in to YouTube in this 
 | 3 | fusetag | 296 | ready: review major fixed, QA pass, frames checked |
 | 4 | trailtrap | 2123 | ready, weakest of the four: rule changed after review (every crash clears the board), QA pass, frames checked |
 
-All four: sound verified by measurement only, never heard; picture verified from downscaled stills, never watched in motion. Open items from the review are listed in the decision log.
+All four: regenerated on the owner's Windows computer 17 Nov and QA clean. Reviewed as 2 fps contact sheets over the full length plus spectrograms and noise-flatness measurements; no agent can listen, so audio is still judged by measurement only. Upload copies (2-pass, under 10 MB for the Chrome upload tool) are in `out/upload/` and pass QA.
 
 ## Decision log
 
@@ -91,4 +91,8 @@ All four: sound verified by measurement only, never heard; picture verified from
 - 16 Nov: left open on purpose: territory opens on an empty board (colour splash on frame 0 needs a rule change and new seed); fusetag late rounds are sparse (closing walls would fix it); trailtrap's first crash is at 9.3 s, its duel runs at over 3x speed and frame 0 shows a half-typed question; eventhorizon's winner is the least-drag planet and its clearance is thin on a phone; all four share the 2 s zoom-in and half-second reset. Revisit only if retention data points at them.
 - 16 Nov: channel art checked by the owner agent at avatar sizes 300, 98 and 36 px and banner safe area; reads cleanly. Independent review of identity, engagement plan and tracker still not done; fold into the next batch review.
 - 16 Nov: owner set the audience to the United States. Video 1 re-rendered with COLOR (same seed, same result); plans and channel kit switched to American spelling; upload slots set to 12:00 and 19:00 US Eastern as an unverified starting point.
+- 17 Nov: channel created: Predixel, @predixel (id UCEDAAp2gSSw5J38SRza4dUQ), a brand channel under the owner's Google account next to their other channels. Description, keywords, not-made-for-kids, avatar, banner and watermark applied. Country of residence left for the owner.
+- 17 Nov: Windows fixes: render pool falls back from fork to spawn or serial; BT.709 tags via setparams (QA failed without). Event Horizon dive whoosh followed summed proximity (always about 1) and hissed under the whole video; now follows the closest planet cubed.
+- 17 Nov: uploads go through Claude in Chrome (`file_upload`, 10 MB cap) because the built-in browser pane cannot drive a file dialog. Use `out/upload/*.mp4`.
+- 17 Nov: BLOCKED. First upload refused: "Daily upload limit reached", needs the owner's one-time phone verification (youtube.com/verify) or a 24 h wait. Git push also waits on the owner's GitHub sign-in on this computer.
 - 16 Nov: owner moved all work to a session on their own computer and ended cloud work. Inventory at handover: four finished videos (regenerate from the seeds in out/*.json); next builds are Pressure Pie and Fuse Race.
