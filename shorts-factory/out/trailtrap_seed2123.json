@@ -1,0 +1,120 @@
+{
+  "title": "Which line outlasts the others? 4 trails, 4 rules, 1 grid",
+  "description": "Four lines grow one cell at a time on a 36 x 64 grid and can never cross a trail or a wall. Each follows one simple rule: STRAIGHT turns only when blocked, HUGGER keeps a wall on one hand, SEEKER always heads for the larger open region, RANDOM turns when it feels like it. Every crash clears the board: all trails disappear and the lines that are left carry on from where they are, faster (x1.15 with three left, x2.5 for the last two, plus 5% every three seconds). The last line still moving wins.\nThe counters show how many cells each line can still reach. The run is a real simulation picked from a seed search (seed 2123) and drawn and scored entirely by code, with no footage, samples or stock media.\nWas it your pick?",
+  "tags": [
+    "simulation",
+    "prediction",
+    "algorithm battle",
+    "trail simulation",
+    "last one standing",
+    "satisfying",
+    "generative animation",
+    "made with code"
+  ],
+  "made_for_kids": false,
+  "synthetic_media_disclosure": false,
+  "synthetic_media_disclosure_reason": "Clearly stylised 2D animation of abstract lines on a grid; nothing realistic that could be mistaken for real people, places or events.",
+  "seed": 2123,
+  "drama": {
+    "seed": 2123,
+    "score": 27.825,
+    "rejected": null,
+    "winner": "PINK",
+    "winner_index": 1,
+    "winner_rule": "SEEKER",
+    "rules": {
+      "BLUE": "HUGGER",
+      "PINK": "SEEKER",
+      "GREEN": "RANDOM",
+      "ORANGE": "STRAIGHT"
+    },
+    "deciding_crash_at_s": 19.66,
+    "ticks": 539,
+    "eliminations": [
+      {
+        "line": "GREEN",
+        "rule": "RANDOM",
+        "at_s": 9.33,
+        "tick": 182,
+        "place": 4
+      },
+      {
+        "line": "BLUE",
+        "rule": "HUGGER",
+        "at_s": 15.31,
+        "tick": 313,
+        "place": 3
+      },
+      {
+        "line": "ORANGE",
+        "rule": "STRAIGHT",
+        "at_s": 19.66,
+        "tick": 539,
+        "place": 2
+      }
+    ],
+    "first_elimination_at_s": 9.33,
+    "final_duel": {
+      "seconds": 4.33,
+      "share_of_duel_in_one_shared_region": 0.59,
+      "room_at_start": {
+        "PINK": 2302,
+        "ORANGE": 2302
+      },
+      "winner_had_less_room_at_start": false,
+      "winner_last_behind_on_room_at_s": 18.83
+    },
+    "winner_room_left_at_end": 155,
+    "winner_moves_left_after_end": 155,
+    "runner_up_unused_cells": 1630,
+    "big_room_swings": 10,
+    "biggest_room_swing": {
+      "line": "BLUE",
+      "before": 1932,
+      "after": 158,
+      "at_s": 4.25
+    },
+    "room_lead_changes": 3,
+    "most_room_at_half": "TIED",
+    "winner_share_of_time_with_most_room": 0.444
+  },
+  "seed_search": {
+    "seeds_scored": 4000,
+    "seconds": 20.2,
+    "top5": [
+      {
+        "seed": 2123,
+        "score": 27.825
+      },
+      {
+        "seed": 1445,
+        "score": 26.612
+      },
+      {
+        "seed": 981,
+        "score": 26.499
+      },
+      {
+        "seed": 3599,
+        "score": 24.798
+      },
+      {
+        "seed": 1853,
+        "score": 23.619
+      }
+    ]
+  },
+  "render": {
+    "frames": 725,
+    "fps": 30,
+    "duration_seconds": 24.166666666666668,
+    "audio_seconds": 2.1,
+    "video_seconds": 27.2,
+    "total_seconds": 49.6,
+    "premaster_loudness": {
+      "lufs": -14.1,
+      "lra": 6.0,
+      "true_peak": -2.1
+    }
+  }
+}

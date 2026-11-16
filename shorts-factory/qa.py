@@ -7,6 +7,8 @@
 Checks: ffprobe conformance (1080x1920, 30 fps, H.264 High yuv420p bt709, AAC stereo, faststart),
 length, black frames (blackdetect), loudness and true peak (ebur128), long silences,
 motion on the very first frame and how hard the last frame cuts back to the first.
+Mix notes (printed as INFO or WARN, they never fail the run, because nobody can listen here): loudness after
+a 300 Hz high-pass (what a phone speaker keeps), share of energy below 120 Hz, and sound onsets per 2 s.
 --frames grabs PNG stills at the given timestamps (seconds) for a human or model to look at.
 """
 import argparse
@@ -110,6 +112,30 @@ def main():
     silent = re.findall(r"silence_start: ([\d.]+)", err)
     check("no silence longer than 0.6 s", not silent, silent or "none")
 
+    # ---- mix notes: warnings only
+    notes = []
+    err = run(["ffmpeg", "-hide_banner", "-nostats", "-i", a.video, "-map", "0:a:0",
+               "-af", "highpass=f=300,highpass=f=300,ebur128", "-f", "null", "-"]).stderr
+    m = re.search(r"I:\s*(-?[\d.]+) LUFS", err[err.rfind("Summary:"):])
+    hp = float(m.group(1)) if m else float("nan")
+    pcm = subprocess.run(["ffmpeg", "-loglevel", "error", "-i", a.video, "-map", "0:a:0", "-ac", "1", "-ar", "16000",
+                          "-f", "f32le", "-"], capture_output=True).stdout
+    x = np.frombuffer(pcm, np.float32).astype(np.float64)
+    spec = np.abs(np.fft.rfft(x)) ** 2
+    bass = float(spec[np.fft.rfftfreq(len(x), 1 / 16000) < 120].sum() / max(1e-12, spec.sum()))
+    nb = len(x) // 800                                            # 50 ms blocks
+    db = 10 * np.log10(np.maximum(1e-10, (x[:nb * 800].reshape(nb, 800) ** 2).mean(axis=1)))
+    onset = (np.diff(db) > 6.0) & (db[1:] > -40.0)                # level jumps of more than 6 dB in 50 ms
+    per2 = [int(onset[i:i + 40].sum()) for i in range(0, len(onset) - 20, 40)]
+    lull = best = 0
+    for c in per2:
+        lull = lull + 1 if c == 0 else 0
+        best = max(best, lull)
+    notes.append((hp >= loud["lufs"] - 2.0, "loudness above 300 Hz (phone speaker)",
+                  f'{hp} LUFS, {hp - loud["lufs"]:+.1f} dB against the full mix (want within 2 dB)'))
+    notes.append((bass <= 0.40, "energy below 120 Hz", f"{100 * bass:.0f}% (want 40% or less)"))
+    notes.append((best < 3, "sound onsets per 2 s", f"{per2}, longest stretch without one {2 * best} s (want under 6 s)"))
+
     raw = subprocess.run(["ffmpeg", "-loglevel", "error", "-i", a.video, "-vf", "scale=270:480,format=gray",
                           "-f", "rawvideo", "-"], capture_output=True).stdout
     g = np.frombuffer(raw, np.uint8).reshape(-1, 480, 270).astype(np.int16)
@@ -129,12 +155,15 @@ def main():
 
     for c in checks:
         print(f'{"PASS" if c["ok"] else "FAIL"}  {c["check"]:<34} {c["detail"]}')
+    for ok_, name, detail in notes:
+        print(f'{"INFO" if ok_ else "WARN"}  {name:<34} {detail}')
     for p in frames:
         print("frame", p)
     ok = all(c["ok"] for c in checks)
     print(json.dumps(dict(ok=ok, duration=dur, frames=nframes, loudness=loud,
                           video_kbps=round(int(v.get("bit_rate", 0)) / 1000),
-                          failed=[c["check"] for c in checks if not c["ok"]])))
+                          failed=[c["check"] for c in checks if not c["ok"]],
+                          mix_warnings=[n[1] for n in notes if not n[0]])))
     sys.exit(0 if ok else 1)
 
 

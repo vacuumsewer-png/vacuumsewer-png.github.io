@@ -6,8 +6,8 @@ Day 1 is the day of the first upload, not a calendar date.
 
 | Day | Slot A | Slot B |
 |---|---|---|
-| 1 | TERRITORY BATTLE (built) | FUSE TAG |
-| 2 | TRAIL TRAP | EVENT HORIZON |
+| 1 | TERRITORY BATTLE (built) | EVENT HORIZON (built) |
+| 2 | TRAIL TRAP (built) | FUSE TAG (built) |
 | 3 | PRESSURE PIE | FUSE RACE |
 | 4 | MAZE FLOOD | TIPPING POINT |
 | 5 | STORM RACE | MAGNET CHAOS |
