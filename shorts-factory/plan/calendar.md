@@ -29,4 +29,11 @@ Each day, rank our published videos by engaged views and by "viewed versus swipe
 ## Titles
 
 At most 60 characters, a plain question or statement of the stake, no claims the video does not deliver.
+
+Packaging research (17 Nov, from research/data/2026-11-16.json, top titles of the closest simulation channels):
+- Winners are one short hook line plus one or two emoji: "How long until it explodes? 💥" (BetOnTheColor, 2.4M), "The Piano Keeps Cracking. Which Color Is Last? 🎹" (Bouncy Physics, 426K), "The Hydraulic Press Started Spinning… 😳🌀" (OddlyCoded, 611K). Lead with the twist or the stake, not a spec.
+- Losers read like spec sheets or compilations: "1 ball ×2 vs 4 balls +2 !", "5 Minutes of Oddly Satisfying Simulation", "11 Most Satisfying 2D Simulations". Never "4 trails, 4 rules, 1 grid" style.
+- Hashtags: `#satisfying` is the most common in the top 40; the pick-a-color channel closest to us ends with `#simulation #satisfying`. We put three on the last line of the description (`#simulation #satisfying` + one topic tag) and keep titles clean.
+- Every upload: category Science & Technology, video language Not applicable, title/description language English (United States).
+- Thumbnails: made in ChatGPT per video (owner, 17 Nov); never drawn by our own code and never a raw video frame.
 Pattern examples: "Which color wins the most territory?", "Who is holding it at zero?", "Which planet falls in last?"

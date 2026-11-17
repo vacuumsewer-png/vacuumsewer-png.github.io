@@ -80,6 +80,8 @@ The agent never signs in itself. Once the owner is signed in to YouTube in this 
 | 2 | eventhorizon | 821 | ready: review blocker and five majors fixed, QA pass (one mix note: 6 s without a sound onset), frames checked |
 | 3 | fusetag | 296 | ready: review major fixed, QA pass, frames checked |
 | 4 | trailtrap | 2123 | ready, weakest of the four: rule changed after review (every crash clears the board), QA pass, frames checked |
+| 5 | pressurepie | 88 | ready: QA pass, frames checked by owner agent (minor: muddy 0.6 s rewind crossfade) |
+| 6 | fuserace | 34 | ready: QA pass, finale reworked after owner-agent review, frames checked |
 
 All four: regenerated on the owner's Windows computer 17 Nov and QA clean. Reviewed as 2 fps contact sheets over the full length plus spectrograms and noise-flatness measurements; no agent can listen, so audio is still judged by measurement only. Upload copies (2-pass, under 10 MB for the Chrome upload tool) are in `out/upload/` and pass QA.
 
@@ -100,9 +102,14 @@ All four: regenerated on the owner's Windows computer 17 Nov and QA clean. Revie
   - Territory tvaF_XUmFuU: 17 Nov 12:00 ET. Event Horizon 0uuz0yfP0Gk: 17 Nov 19:00 ET.
   - Trail Trap Bhe6fXd0Pt4: 18 Nov 12:00 ET (the frozen draft was finished, not duplicated). Fuse Tag prJ7rLytJ34: 18 Nov 19:00 ET.
   - Studio schedule picker: Time zone "(GMT-05:00) New York", pick the date first, then choose the time from the list (typed times are ignored).
+- 17 Nov: packaging pass on all four scheduled Shorts (see plan/calendar.md "Packaging research"): new hook titles, `#simulation #satisfying` + topic hashtag on the description's last line, category Science & Technology, video language Not applicable, title/description language English (US). Territory got a ChatGPT-made thumbnail (owner: thumbnails come from ChatGPT, never our own code or raw frames). Event Horizon, Trail Trap, Fuse Tag thumbnails still TODO.
+- 17 Nov: built Pressure Pie (seed 88, 29.8 s) and Fuse Race (seed 34, 25.0 s; finale reworked after review: dead 4 s ending removed, staggered bursts, readable near-miss). Both QA clean; upload copies in out/upload/. Descriptions had the result in them (spoiler); removed. Pressure Pie uploaded (l-z9BllHKOs) with details, category and languages set; scheduling to 19 Nov 12:00 ET was clicked but not confirmed (Chrome froze: PC at ~1 GB free RAM). Check it. Fuse Race not uploaded yet: due 19 Nov 19:00 ET. Make their ChatGPT thumbnails too.
+- 17 Nov: after a reboot Studio's active channel was Just AI Minute; switched back to Predixel. Always check the active channel before posting comments.
 - TODO (each video once it is public): post and pin the prediction comment from the channel, then reply per `plan/engagement.md`:
   - Territory: "Which color holds the most tiles? 🟡 🔵 🟣 🔴 Pick one before the end."
   - Event Horizon: "Which planet makes it? 🔴 🔵 🟡 🩷 🟢 Pick one before the first dive."
   - Trail Trap: "STRAIGHT, HUGGER, SEEKER or RANDOM? Pick the rule that outlasts the rest."
   - Fuse Tag: "Which ball is left at the end? 🟡 🩷 🟣 🔵 🟢 ⚪ Pick one before the first fuse."
+  - Pressure Pie: "Orange, teal, pink or lime: which color takes the whole circle? 🟠 🩵 🩷 🟢 Pick one before the first pop."
+  - Fuse Race: "Pick your rocket before the flame reaches the first junction: orange, cyan, magenta, gold or green? Same burn speed on every fuse, so only the layout and the jumps decide it."
 - 16 Nov: owner moved all work to a session on their own computer and ended cloud work. Inventory at handover: four finished videos (regenerate from the seeds in out/*.json); next builds are Pressure Pie and Fuse Race.

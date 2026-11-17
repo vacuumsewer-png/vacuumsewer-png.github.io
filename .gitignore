@@ -5,3 +5,6 @@
 __pycache__/
 *.pyc
 node_modules/
+shorts-factory/out/stills/
+shorts-factory/out/thumbs/
+shorts-factory/out/upload/
