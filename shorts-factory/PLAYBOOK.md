@@ -96,5 +96,13 @@ All four: regenerated on the owner's Windows computer 17 Nov and QA clean. Revie
 - 17 Nov: uploads go through Claude in Chrome (`file_upload`, 10 MB cap) because the built-in browser pane cannot drive a file dialog. Use `out/upload/*.mp4`.
 - 17 Nov: RESOLVED (was BLOCKED). First upload refused: "Daily upload limit reached", needs the owner's one-time phone verification (youtube.com/verify) or a 24 h wait. Git push also waits on the owner's GitHub sign-in on this computer.
 - 17 Nov: owner verified Predixel. Territory (youtube.com/shorts/tvaF_XUmFuU) uploaded Private, played as a vertical Short with audio, then scheduled 17 Nov 12:00 ET. Event Horizon (youtube.com/shorts/0uuz0yfP0Gk) scheduled 17 Nov 19:00 ET. Both: not made for kids, altered content No, tags from out/*.json.
-- 17 Nov: TODO. Trail Trap was uploaded but its details were not filled in: the Studio tab froze mid-form. Check Studio > Content > Shorts for a draft titled "trailtrap seed2123"; delete it or finish it. Trail Trap is due 18 Nov 12:00 ET and Fuse Tag 18 Nov 19:00 ET, neither scheduled yet. Studio's schedule picker: Time zone "(GMT-05:00) New York", pick the date first, then choose the time from the list. Pin the prediction comments once each video is live.
+- 17 Nov: all four day-1/day-2 Shorts scheduled (Studio shows IST; all at New York time):
+  - Territory tvaF_XUmFuU: 17 Nov 12:00 ET. Event Horizon 0uuz0yfP0Gk: 17 Nov 19:00 ET.
+  - Trail Trap Bhe6fXd0Pt4: 18 Nov 12:00 ET (the frozen draft was finished, not duplicated). Fuse Tag prJ7rLytJ34: 18 Nov 19:00 ET.
+  - Studio schedule picker: Time zone "(GMT-05:00) New York", pick the date first, then choose the time from the list (typed times are ignored).
+- TODO (each video once it is public): post and pin the prediction comment from the channel, then reply per `plan/engagement.md`:
+  - Territory: "Which color holds the most tiles? 🟡 🔵 🟣 🔴 Pick one before the end."
+  - Event Horizon: "Which planet makes it? 🔴 🔵 🟡 🩷 🟢 Pick one before the first dive."
+  - Trail Trap: "STRAIGHT, HUGGER, SEEKER or RANDOM? Pick the rule that outlasts the rest."
+  - Fuse Tag: "Which ball is left at the end? 🟡 🩷 🟣 🔵 🟢 ⚪ Pick one before the first fuse."
 - 16 Nov: owner moved all work to a session on their own computer and ended cloud work. Inventory at handover: four finished videos (regenerate from the seeds in out/*.json); next builds are Pressure Pie and Fuse Race.
