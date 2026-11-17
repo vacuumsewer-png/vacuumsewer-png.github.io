@@ -36,4 +36,8 @@ Packaging research (17 Nov, from research/data/2026-11-16.json, top titles of th
 - Hashtags: `#satisfying` is the most common in the top 40; the pick-a-color channel closest to us ends with `#simulation #satisfying`. We put three on the last line of the description (`#simulation #satisfying` + one topic tag) and keep titles clean.
 - Every upload: category Science & Technology, video language Not applicable, title/description language English (United States).
 - Thumbnails: made in ChatGPT per video (owner, 17 Nov); never drawn by our own code and never a raw video frame.
+- Owner verdict 17 Nov: the first neat "diagram + plain question" titles and thumbnails were boring. Current standard (titles and concepts drafted with ChatGPT from the video's true drama stats, then checked by us):
+  - Title = the most dramatic TRUE beat from out/*.json drama, in Title Case, hook in the first 3 words, 1 emoji: "Decided by 2 Tiles! Which Color Wins This War? 😳", "Don't Get Too Close to This Black Hole! 🕳️", "Every Crash Wipes the Grid… and They Get FASTER 😳".
+  - Thumbnail = extreme close-up of ONE focal moment, 2-4 word overlay in big yellow text with black outline and a tilt, red arrow or circle on the key spot, saturated neon, a different layout per video ("ONLY 2 TILES?!", "TOO CLOSE?!", "NO WAY OUT!", "PASS IT NOW!", "34 LEAD CHANGES?!", "0.5 SEC APART!").
+  - Spoiler check before upload: the winner never leads, dies, crashes or gets the arrow; compare with drama.winner.
 Pattern examples: "Which color wins the most territory?", "Who is holding it at zero?", "Which planet falls in last?"

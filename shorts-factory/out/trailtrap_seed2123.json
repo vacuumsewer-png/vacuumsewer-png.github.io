@@ -1,5 +1,5 @@
 {
-  "title": "Every crash wipes the board. Which line is last? 💥",
+  "title": "Every Crash Wipes the Grid… and They Get FASTER 😳",
   "description": "Four lines grow one cell at a time on a 36 x 64 grid and can never cross a trail or a wall. Each follows one simple rule: STRAIGHT turns only when blocked, HUGGER keeps a wall on one hand, SEEKER always heads for the larger open region, RANDOM turns when it feels like it. Every crash clears the board: all trails disappear and the lines that are left carry on from where they are, faster (x1.15 with three left, x2.5 for the last two, plus 5% every three seconds). The last line still moving wins.\nThe counters show how many cells each line can still reach. The run is a real simulation picked from a seed search (seed 2123) and drawn and scored entirely by code, with no footage, samples or stock media.\nWas it your pick?\n#simulation #satisfying #algorithm",
   "tags": [
     "simulation",
