@@ -108,8 +108,8 @@ All four: regenerated on the owner's Windows computer 17 Nov and QA clean. Revie
 - 17 Nov: the PC ran out of memory (about 1 GB free; owner's other render jobs plus Chrome) and Studio froze repeatedly. Keep one Chrome tab, close it when done.
 - 17 Nov: after a reboot Studio's active channel was Just AI Minute; switched back to Predixel. Always check the active channel before posting comments.
 - 17 Nov: Territory (tvaF_XUmFuU) public; prediction comment posted as Predixel and pinned. No viewer comments yet (replied to 0). Chrome's active identity was the owner's personal channel on another Google account; switched via avatar menu > Switch account > Predixel.
+- 18 Nov: Event Horizon (0uuz0yfP0Gk) public; prediction comment posted as Predixel and pinned. No viewer comments on it or on Territory (replied to 0). Chrome's active identity was Strange Little Things; switched to Predixel at youtube.com/channel_switcher.
 - TODO (each video once it is public): post and pin the prediction comment from the channel, then reply per `plan/engagement.md`:
-  - Event Horizon: "Which planet makes it? 🔴 🔵 🟡 🩷 🟢 Pick one before the first dive."
   - Trail Trap: "STRAIGHT, HUGGER, SEEKER or RANDOM? Pick the rule that outlasts the rest."
   - Fuse Tag: "Which ball is left at the end? 🟡 🩷 🟣 🔵 🟢 ⚪ Pick one before the first fuse."
   - Pressure Pie: "Orange, teal, pink or lime: which color takes the whole circle? 🟠 🩵 🩷 🟢 Pick one before the first pop."
