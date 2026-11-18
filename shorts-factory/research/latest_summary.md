@@ -1,65 +1,66 @@
-# Competitor tracker 2026-11-16
-Compared with 2026-11-15 (19.1 hours earlier). Channel gain = change in total channel views (exact counts, but YouTube updates them in steps, so a single day's gain is noisy). The earlier snapshot has no video lists, so videos are ranked by views per day since publication (heuristic). Note: the 2026-11-15 snapshot was seeded from the earlier research result (channel totals only, no video lists; recorded on 2026-11-15 at about 08:30 UTC, exact time per channel unknown).
-Channels: 41 tracked, 41 with stats. Video lists: 0 from RSS (exact), 41 from the uploads page, 0 unavailable. Marks: ~ rounded by YouTube; ≈ age guessed from upload order (heuristic, used when the page shows no dates). Run took 72.4s, 85 requests.
+# Competitor tracker 2026-11-18
+Compared with 2026-11-16 (59.2 hours earlier). Channel gain = change in total channel views (exact counts, but YouTube updates them in steps, so a single day's gain is noisy). Video gain = change in views of the listed latest uploads.
+Channels: 42 tracked, 41 with stats. Video lists: 41 from RSS (exact), 0 from the uploads page, 1 unavailable. Marks: ~ rounded by YouTube; ≈ age guessed from upload order (heuristic, used when the page shows no dates). Run took 96.1s, 87 requests.
 
-## Top 20 videos by views per day since publication
-| # | views/day | views | age | channel | title | id |
+## Top 20 videos by view gain since previous snapshot
+| # | gain | views | age | channel | title | id |
 |---|---|---|---|---|---|---|
-| 1 | ~3.77M | ~5.65M | ~36h | Bounce Theory | Neon Yellow & Blue Metallic Bowling Balls Shatter 🤯 #satisfyi… | 5lESM31t9nM |
-| 2 | ~3.70M | ~9.25M | ~2d | Bounce Theory | Orange & Electric Blue Bowling Balls Shatter… Then Rebuild 🤯… | Qa_0dTPSMrY |
-| 3 | ~2.75M | ~2.75M | ~19h | Bounce Theory | Raspberry Red & Turquoise Metallic Bowling Balls Shatter 🤯 #s… | lccHMDVeapE |
-| 4 | ~2.19M | ~9.85M | ~4d | Bounce Theory | Neon Pink & Lime Bowling Balls Shatter in Reverse 🤯 #satisfyi… | 3-m3DI8e1Kk |
-| 5 | ~2.17M | ~3.25M | ~36h | Bounce Theory | Gold & Fuchsia Metallic Bowling Balls vs. a Jade Honeycomb 🤯… | OxOg8LHbNWE |
-| 6 | ≈1.21M | ~11.5M | ≈10d | Grid Loops | Wooden Tables Slide In, Tip Over The Edge & Drop Into The Flo… | WbFu1Y6Aht8 |
-| 7 | ≈1.12M | ~7.50M | ≈7d | Grid Loops | The Last Wooden Table Hovers, Spins & Drops In 🪑🟤 | bZh8wPQx16I |
-| 8 | ~1.00M | ~1.50M | ~36h | Marble Dream League | Brazil's All-Time Top Scorers 🇧🇷 Neymar or Pelé? | 2SWySRR8X-Y |
-| 9 | ~638K | ~958K | ~36h | Indonesia vs Dunia | Twin Flag Trick: Follow Indonesia 👀🔎 | XBV9QLPmbE8 |
-| 10 | ≈572K | ~4.50M | ≈8d | Board Brawl | He Took The Pawn... Checkmate In 8 😱 / Englund Gambit | w-k9WOo5Uqc |
-| 11 | ~522K | ~2.35M | ~4d | BonTick | Battery Charging / 0% → 100% / Nut MIDI #bontick #blackmidi #… | KD67R4iQRAg |
-| 12 | ~366K | ~550K | ~36h | Memeland | Car Merge 💨 Will it reach the Final Form? #shorts | XViY0ksWJ0E |
-| 13 | ~346K | ~520K | ~36h | Marble Dream League | What If Argentina & Brazil Joined the Nations League? 🇦🇷🇧🇷 vs… | -qI2mtUXbn4 |
-| 14 | ~329K | ~1.15M | ~3d | Indonesia vs Dunia | Indonesia is the new kid looking for friends. | occzGm7Cf6Q |
-| 15 | ~322K | ~482K | ~36h | Indonesia vs Dunia | 🔎 18,000 flags, only one ARGENTINA | rI8vmf8b56M |
-| 16 | ≈295K | ~312K | ≈25h | Grid Loops | Spinning Cherry Candy Dice Layers In Corner Waves & One White… | bsj-yi2CY3M |
-| 17 | ~266K | ~266K | ~12h | Indonesia vs Dunia | Only Red and White: Japan, Indonesia, and Others 🔴 | b0jbpTsCD7M |
-| 18 | ~249K | ~622K | ~2d | OddlyCoded | The Hydraulic Press Attacks From Both Directions… 😳💥 | b1YnfUY7Ugk |
-| 19 | ~245K | ~612K | ~2d | OddlyCoded | The Hydraulic Press Started Spinning… 😳🌀 | 44-4eTYghh4 |
-| 20 | ~245K | ~612K | ~2d | Memeland | Cat Merge 👀 Will it reach the Final Form? #shorts | 4iHoD15Z6rU |
-At most 5 rows per channel are shown. Higher-ranked rows left out: Bounce Theory 13.
+| 1 | ~+8.92M | 10.3M | 3d | Bounce Theory | Violet & Lime Metallic Bowling Balls Shatter 🤯 #satisfying #s… | K09aHSOZe7U |
+| 2 | +3.77M new | 3.77M | 25h | Bounce Theory | Lemon Yellow & Violet Bowling Balls vs. an Aqua Honeycomb 🤯 #… | QvH1qFieG0U |
+| 3 | ~+3.19M | 3.29M | 3d | Bounce Theory | Cherry Red & Silver Metallic Bowling Balls Shatter… Then Rebu… | v52UOp3LwKQ |
+| 4 | ~+2.49M | 2.65M | 3d | Super Balls 3000 | Merging cat memes PART 2… the final boss is back 😼❓ #catmemes | 0Vqs9k4Xc1Y |
+| 5 | ~+2.37M | 5.12M | 3d | Bounce Theory | Raspberry Red & Turquoise Metallic Bowling Balls Shatter 🤯 #s… | lccHMDVeapE |
+| 6 | +1.85M new | 1.85M | 35h | OddlyCoded | The hydraulic press crushed one ball into 3,000 pieces 💀 #sim… | 0cgvIqzQrlc |
+| 7 | +1.82M new | 1.82M | 31h | Bounce Theory | Orange & Electric Blue Bowling Balls Shatter on a Sunset Grid… | zMjLLPP_Wvc |
+| 8 | ~+1.50M | 1.72M | 4d | Super Balls 3000 | Merging cat memes until we unlock the FINAL BOSS cat 😼❓ #catm… | mEkX5YTJDiE |
+| 9 | ~+901K | 1.15M | 4d | BonTick | Battery Level 0% to 100% / Nut MIDI [long] | DItotq_x10w |
+| 10 | ~+744K | 1.29M | 6d | Bouncy Physics | One More Black Ball Every Round. Can Your Color Last? 🎹 #simu… | 7p-uiWpyDD8 |
+| 11 | +509K new | 509K | 14h | Indonesia vs Dunia | Semua INDONESIA! Mana POLANDIA? | 8nDzqlnPqpw |
+| 12 | +489K new | 489K | 2d | Chessmaxxing | Magnus Carlsen Vs WittyAlien Round Two #chess #wittyalien #ma… | Y3xvG80chBk |
+| 13 | +482K new | 482K | 27h | Grid Loops | Wedge-Shaped Wooden Tables Flip Over & Close The Hole 🪑🟤 | J0eRzdX-cCo |
+| 14 | +449K new | 449K | 46h | Board Brawl | He Took The Pawn... And Lost His Queen 😱 / Englund Gambit | H2stWjoi2OY |
+| 15 | +401K new | 401K | 2d | Bouncy Physics | Can Your Color Outlast 7 Others on a Breaking Piano? 🎹 #simul… | 3GMbO5zquFM |
+| 16 | +383K new | 383K | 24h | Indonesia vs Dunia | Seberapa jauh INDONESIA membentang di peta nyata, dibanding l… | yauLYtJcauU |
+| 17 | +324K new | 324K | 2d | TitoXMaps | 🇬🇧🌏🚩 #map #mapper #maps #mapping #titomaps #geo #geography #s… | Y65KfR2QX78 |
+| 18 | ~+313K | 317K | 3d | Marble Dream League | Most Liga MX Titles of All Time 🏆🇲🇽 Can Anyone Catch América? | fyDS-8gk9Ao |
+| 19 | +267K new | 267K | 17h | OddlyCoded | 5 hydraulic presses crushed one ball into 3,343 pieces 💀 #sim… | KOtstiu1sF8 |
+| 20 | ~+236K | 256K | 3d | OddlyCoded | The Hydraulic Press Splits Every Ball Into MORE Each Time… 😳💥 | 4J3WbQC0qB0 |
+At most 5 rows per channel are shown. Higher-ranked rows left out: Bounce Theory 7.
 
 ## Channels ranked by total-view gain
 | # | channel | type | gain | total views | subs | videos | views per video | median latest 15 | uploads 7d |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | Bounce Theory | loop3d | +15.2M | 114M | 42.6K (+4.60K) | 89 (+2) | 1.28M | 3.45M | 20 |
-| 2 | Grid Loops | loop3d | +4.28M | 116M | 19.5K (+500) | 67 (+2) | 1.73M | 400K | ? |
-| 3 | Indonesia vs Dunia | marble-flag | +3.10M | 58.0M | 48.6K (+1.50K) | 143 (+7) | 405K | 65.5K | 30+ |
-| 4 | BonTick | counting | +2.80M | 67.7M | 24.9K (+1.20K) | 370 (+3) | 183K | 166K | 23 |
-| 5 | OddEyes | puzzle | +1.78M | 90.5M | 57.8K (+1.20K) | 33 (+0) | 2.74M | 39.5K | ? |
-| 6 | OddlyCoded | sim | +1.17M | 9.17M | 4.29K (+410) | 74 (+2) | 124K | 40.5K | 24 |
-| 7 | BetOnTheColor | sim | +1.06M | 33.9M | 35.7K (+800) | 77 (+0) | 440K | 84.5K | 0 |
-| 8 | Marble Dream League | marble-flag | +999K | 28.8M | 12.1K (+600) | 129 (+3) | 223K | 122K | 19 |
-| 9 | Memeland | merge | +946K | 35.5M | 51.2K (+1.60K) | 87 (+4) | 408K | 59.5K | 19 |
-| 10 | Bouncy Physics | sim | +880K | 6.66M | 5.74K (+470) | 115 (+2) | 57.9K | 28.5K | 23 |
-| 11 | Chaos Loop Lab | sim | +635K | 5.00M | 1.12K (+60) | 156 (+6) | 32.0K | 1.75K | 30+ |
-| 12 | Board Brawl | chess | +507K | 6.77M | 7.64K (+650) | 20 (+2) | 338K | 126K | ? |
-Others: Endform TV +429K, BounceVerse +401K, Super Balls 3000 +378K, Satisfying 2D Sims +266K, Honest Maps +223K, Elite Trivia +207K, Studio Loops +172K, TitoXMaps +148K, Chessmaxxing +143K, PianoCoozz +129K, Layerloop +87.6K, Infinite Layers +80.2K, Geography Enjoyer +50.5K, Watch the Math +45.0K, CHESS INCISO +44.9K, Riddle Rush +43.8K, Whatif Map +19.3K, True or False Maps +19.2K, Sharp Eye Test +16.5K, Forya Studios +10.1K, Math Impressions +4.77K
+| 1 | Bounce Theory | loop3d | +26.4M | 140M | 54.9K (+12.3K) | 97 (+8) | 1.44M | 1.82M | 15+ |
+| 2 | Indonesia vs Dunia | marble-flag | +6.62M | 64.6M | 52.4K (+3.80K) | 164 (+21) | 394K | 56.7K | 15+ |
+| 3 | BonTick | counting | +4.75M | 72.5M | 28.3K (+3.40K) | 378 (+8) | 192K | 33.3K | 15+ |
+| 4 | Super Balls 3000 | merge | +4.68M | 11.9M | 15.5K (+6.04K) | 27 (+2) | 439K | 263K | 7 |
+| 5 | Grid Loops | loop3d | +3.49M | 120M | 20.1K (+600) | 73 (+6) | 1.64M | 196K | 14 |
+| 6 | Marble Dream League | marble-flag | +3.24M | 32.0M | 12.9K (+800) | 137 (+8) | 234K | 98.2K | 15+ |
+| 7 | OddlyCoded | sim | +3.03M | 12.2M | 5.43K (+1.14K) | 80 (+6) | 152K | 43.7K | 15+ |
+| 8 | Endform TV | merge | +2.57M | 10.9M | 12.3K (+1.90K) | 58 (+5) | 189K | 31.8K | 15+ |
+| 9 | Memeland | merge | +2.57M | 38.1M | 53.4K (+2.20K) | 101 (+14) | 377K | 17.5K | 15+ |
+| 10 | OddEyes | puzzle | +2.36M | 92.9M | 60.3K (+2.50K) | 37 (+4) | 2.51M | 33.0K | 11 |
+| 11 | Bouncy Physics | sim | +1.74M | 8.41M | 6.75K (+1.01K) | 121 (+6) | 69.5K | 42.7K | 15+ |
+| 12 | Board Brawl | chess | +1.71M | 8.48M | 9.44K (+1.80K) | 24 (+4) | 353K | 170K | 14 |
+Others: BetOnTheColor +1.47M, TitoXMaps +1.19M, Elite Trivia +1.10M, Satisfying 2D Sims +1.07M, Layerloop +934K, PianoCoozz +793K, Riddle Rush +506K, Chessmaxxing +462K, BounceVerse +415K, Chaos Loop Lab +380K, Honest Maps +346K, Studio Loops +329K, Watch the Math +231K, Geography Enjoyer +208K, Whatif Map +97.9K, True or False Maps +67.6K, Forya Studios +58.4K, CHESS INCISO +30.6K, Sharp Eye Test +23.3K, Math Impressions +12.1K, Infinite Layers ?, The Introverted Att… ?
 
 ## Counter-examples (failed channels kept on purpose)
 | # | channel | type | gain | total views | subs | videos | views per video | median latest 15 | uploads 7d |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | Bounce Lab Simulations | sim | +19.2K | 251K | 158 (+9) | 221 (+7) | 1.14K | 1.15K | 30+ |
-| 2 | Just Keep Watching | sim | +8.54K | 31.6K | 32 (+4) | 401 (+100) | 79 | 1 | ? |
-| 3 | Flag Battle 2D | marble-flag | +4.88K | 279K | 280 (+4) | 305 (+9) | 916 | 857 | ? |
-| 4 | Data Race | map | +2.24K | 55.8K | 39 (+1) | 124 (+4) | 450 | 77 | 30+ |
-| 5 | FactBlink | merge | +1.95K | 22.4K | 11 (0) | 115 (+1) | 194 | 96 | ? |
-| 6 | Quiz Trap | quiz | +639 | 95.0K | 168 (+7) | 479 (+6) | 198 | 224 | ? |
-| 7 | Stockfish Theater | chess | +402 | 201K | 57 (0) | 295 (+3) | 680 | 761 | ? |
-| 8 | DPSatisfyingBalls | sim | +1 | 534K | 335 (0) | 923 (+1) | 579 | 2 | ? |
-All-time views per uploaded video: counter-examples 514 (8 channels), other tracked channels 184K (33 channels). Gain since previous snapshot: counter-examples +37.8K in total, others +36.3M.
+| 1 | Bounce Lab Simulations | sim | +99.6K | 351K | 198 (+40) | 250 (+29) | 1.40K | 1.27K | 15+ |
+| 2 | Flag Battle 2D | marble-flag | +13.4K | 293K | 288 (+8) | 327 (+22) | 895 | 602 | 15+ |
+| 3 | Quiz Trap | quiz | +7.72K | 103K | 175 (+7) | 499 (+20) | 206 | 27 | 15+ |
+| 4 | Data Race | map | +5.14K | 60.9K | 42 (+3) | 140 (+16) | 435 | 470 | 15+ |
+| 5 | Stockfish Theater | chess | +4.13K | 205K | 57 (0) | 298 (+3) | 687 | 763 | 10 |
+| 6 | Just Keep Watching | sim | +3.00K | 34.6K | 38 (+6) | 409 (+8) | 85 | 52 | 15+ |
+| 7 | FactBlink | merge | +2.09K | 24.4K | 12 (+1) | 120 (+5) | 204 | 66 | 15+ |
+| 8 | DPSatisfyingBalls | sim | -8 | 534K | 335 (0) | 925 (+2) | 578 | 3 | 7 |
+All-time views per uploaded video: counter-examples 541 (8 channels), other tracked channels 173K (34 channels). Gain since previous snapshot: counter-examples +135K in total, others +72.9M.
 
 ## Most common title words (top 40 videos above, at most 6 per channel; count = titles containing the word)
-Words: indonesia 6, bowling 5, shatter 5, balls 5, midi 4, nut 4, one 4, hydraulic 4, metallic 3, red 3, checkmate 3, spinning 3, layers 3, white 3, press 3, neon 2, blue 2, lime 2
-Hashtags: #satisfying 8, #midi 3, #piano 3, #bontick 3, #music 3, #blackmidi 3, #usa 2, #america 2, #ronaldo 2, #yamal 2
+Words: balls 7, bowling 6, one 6, shatter 5, final 5, reach 5, metallic 4, vs 4, ball 4, indonesia 4, all 4, quiz 4, guess 4, merging 3, hydraulic 3, every 3, more 3, missing 3
+Hashtags: #satisfying 14, #simulation 5, #catmemes 2, #magnuscarlsen 1, #chess 1, #wittyalien 1, #map 1, #geo 1, #europe 1, #titomaps 1
 
 ## Problems
-- RSS feed failed 3 time(s), then was skipped for the rest of the run; the uploads page was used instead (rounded counts).
+- RSS feed failed 1 time(s); the uploads page was used instead (rounded counts).
+- Channel errors: InfiniteLayersStudio (about: no stats in About page)

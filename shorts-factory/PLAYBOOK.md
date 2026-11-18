@@ -82,6 +82,8 @@ The agent never signs in itself. Once the owner is signed in to YouTube in this 
 | 4 | trailtrap | 2123 | ready, weakest of the four: rule changed after review (every crash clears the board), QA pass, frames checked |
 | 5 | pressurepie | 88 | ready: QA pass, frames checked by owner agent (minor: muddy 0.6 s rewind crossfade) |
 | 6 | fuserace | 34 | ready: QA pass, finale reworked after owner-agent review, frames checked |
+| 7 | mazeflood | 80 | scheduled: QA pass, frames checked (minor: small wall-follower icons, 3 s still on the result) |
+| 8 | tippingpoint | 2750 | scheduled: QA pass, frames checked (minor: dense late piles, mild near-miss) |
 
 All four: regenerated on the owner's Windows computer 17 Nov and QA clean. Reviewed as 2 fps contact sheets over the full length plus spectrograms and noise-flatness measurements; no agent can listen, so audio is still judged by measurement only. Upload copies (2-pass, under 10 MB for the Chrome upload tool) are in `out/upload/` and pass QA.
 
@@ -109,9 +111,12 @@ All four: regenerated on the owner's Windows computer 17 Nov and QA clean. Revie
 - 17 Nov: after a reboot Studio's active channel was Just AI Minute; switched back to Predixel. Always check the active channel before posting comments.
 - 17 Nov: Territory (tvaF_XUmFuU) public; prediction comment posted as Predixel and pinned. No viewer comments yet (replied to 0). Chrome's active identity was the owner's personal channel on another Google account; switched via avatar menu > Switch account > Predixel.
 - 18 Nov: Event Horizon (0uuz0yfP0Gk) public; prediction comment posted as Predixel and pinned. No viewer comments on it or on Territory (replied to 0). Chrome's active identity was Strange Little Things; switched to Predixel at youtube.com/channel_switcher.
+- 18 Nov: the 09:00 predixel-daily run stopped at its first step and Run now did not start a new one, so the main session did day 4. Built Maze Flood (seed 80, 26.2 s; water timing is drawn per seed so close finishes exist, only about 1% of seeds pass) and Tipping Point (seed 2750, 26.1 s; the upload copy's AAC must be encoded from the mastered WAV, because AAC to AAC overshot true peak). Titles drafted with ChatGPT; ChatGPT thumbnails in out/thumbs/p4_*.png (the first Maze Flood draft showed the winner, yellow, highest, so it was redone). Scheduled: Maze Flood ZfbaUr-fgic 20 Nov 12:00 ET, Tipping Point wfqispvAOZw 20 Nov 19:00 ET. Studio had switched to Strange Little Things; switched back via avatar > Switch account. Pressing Escape in the upload dialog closes it and loses the upload; never send Escape there.
 - TODO (each video once it is public): post and pin the prediction comment from the channel, then reply per `plan/engagement.md`:
   - Trail Trap: "STRAIGHT, HUGGER, SEEKER or RANDOM? Pick the rule that outlasts the rest."
   - Fuse Tag: "Which ball is left at the end? 🟡 🩷 🟣 🔵 🟢 ⚪ Pick one before the first fuse."
   - Pressure Pie: "Orange, teal, pink or lime: which color takes the whole circle? 🟠 🩵 🩷 🟢 Pick one before the first pop."
   - Fuse Race: "Pick your rocket before the flame reaches the first junction: orange, cyan, magenta, gold or green? Same burn speed on every fuse, so only the layout and the jumps decide it."
+  - Maze Flood: "Left wall, right wall, nearest the exit or random: which runner gets out first? 🟡 🩷 🟢 🟣 Pick before the water reaches the second row."
+  - Tipping Point: "Left or right: which side stays up? Pick before the first weight lands. Mass times distance decides it, and past 12 degrees everything slides."
 - 16 Nov: owner moved all work to a session on their own computer and ended cloud work. Inventory at handover: four finished videos (regenerate from the seeds in out/*.json); next builds are Pressure Pie and Fuse Race.
