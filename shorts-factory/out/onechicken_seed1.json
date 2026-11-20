@@ -1,0 +1,33 @@
+{
+  "title": "Everyone gets 1 chicken. Who ends up rich?",
+  "description": "Three people start with the same chicken. One eats it, one keeps it for eggs, one breeds it. A year later they live very differently. A short parable about spending, saving and investing, drawn by code with synthesized sound: no footage, samples or stock media.",
+  "tags": [
+    "parable",
+    "money",
+    "saving",
+    "investing",
+    "compound growth",
+    "animation",
+    "made with code"
+  ],
+  "made_for_kids": false,
+  "synthetic_media_disclosure": false,
+  "seed": 1,
+  "drama": {
+    "note": "story format, no simulation"
+  },
+  "seed_search": null,
+  "render": {
+    "frames": 720,
+    "fps": 30,
+    "duration_seconds": 24.0,
+    "audio_seconds": 1.7,
+    "video_seconds": 18.1,
+    "total_seconds": 19.9,
+    "premaster_loudness": {
+      "lufs": -14.0,
+      "lra": 3.8,
+      "true_peak": -2.5
+    }
+  }
+}
