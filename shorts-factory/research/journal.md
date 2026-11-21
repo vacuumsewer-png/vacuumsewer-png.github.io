@@ -15,3 +15,8 @@ Daily notes from `track.py` (what gained, what is dying, one change for our next
 - OddlyCoded press variant ("hunted down 3,500 balls") 250K in 20 h; Super Balls 3000 merge series (+1.9M) wins with "until we unlock the FINAL BOSS" escalation.
 - Dying or flat: Forya Studios, Watch the Math, Sharp Eye Test at 0 gain. Tracker note: RSS failed 6 times and 12 channels hit the time budget (all eight counter-examples), so today's counter-example data is empty.
 - Change for us: give the viewer a task in the hook ("follow one", "pick before X") and prefer last-one-standing framing for the next titles.
+
+## 2026-11-21
+- Gained: Bounce Theory bowling-ball shatter series (6.2M in 17h), Super Balls 3000 merge-until-final-boss series; Bouncy Physics "which color is last" 250K+ in 18h.
+- Dying/flat: Forya Studios, Watch the Math, Sharp Eye Test.
+- Change for us: give the viewer a task in the hook ("pick before X") and prefer last-one-standing framing.

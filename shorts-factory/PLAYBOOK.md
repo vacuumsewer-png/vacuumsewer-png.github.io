@@ -124,3 +124,4 @@ All four: regenerated on the owner's Windows computer 17 Nov and QA clean. Revie
   - Domino Giant: "How many dominoes did you guess? Each one is 1.5 times bigger than the last, starting at 5 cm, and the tower is 300 m. Post your number before you watch the end."
   - River Drift: "Arrow, Leaf, Kite or Twin: which float wins the river? Pick before they leave the start line. Nobody steers, the current and ten drifting whirlpools decide."
 - 16 Nov: owner moved all work to a session on their own computer and ended cloud work. Inventory at handover: four finished videos (regenerate from the seeds in out/*.json); next builds are Pressure Pie and Fuse Race.
+- 21 Nov (run 2): tracker + journal done. Magnet Chaos render failed: seed search picked seed 126 which raises "still mixed at zoom 4^8" in scenes/magnetchaos.py _maps; needs a seed gate or higher MAXLEV. Studio work not done; scheduled buffer is only about 3 slots (target 14).
