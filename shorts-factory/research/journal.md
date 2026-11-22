@@ -20,3 +20,8 @@ Daily notes from `track.py` (what gained, what is dying, one change for our next
 - Gained: Bounce Theory bowling-ball shatter series (6.2M in 17h), Super Balls 3000 merge-until-final-boss series; Bouncy Physics "which color is last" 250K+ in 18h.
 - Dying/flat: Forya Studios, Watch the Math, Sharp Eye Test.
 - Change for us: give the viewer a task in the hook ("pick before X") and prefer last-one-standing framing.
+
+## 2026-11-22
+- Gained: Bounce Theory bowling-ball shatter series (3.5M in 31h), Memeland/Super Balls "will it reach the final form" merge series, Grid Loops satisfying-object loops.
+- Dying/flat: none notable in the top 20; Forya/Watch the Math still absent.
+- Change for us: keep the "pick before X" hook task; Magnet Chaos next (a visible color-fate map matches the "which color" winners).

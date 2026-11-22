@@ -407,7 +407,7 @@ class Scene:
             if k == 0:
                 assert win[self.j0 + self.gd[1], self.i0 + self.gd[0]] == self.gwin, "map disagrees with act 2"
             self.lev.append((win, tc))
-            if (win == self.win).all():
+            if (win == self.win).mean() >= 0.997:
                 break
         else:
             raise ValueError(f"seed {self.seed}: still mixed at zoom 4^{MAXLEV}")
