@@ -43,7 +43,7 @@ REST_F = 51                   # act 1 keeps running this long after the bob is c
 GSPEED = 3                    # act 2 plays at 3x
 G_INTRO, G_REST, G_OUT = 15, 42, 9
 FILL_F, HOLD_F, ZOOM_F, END_F = 114, 15, 138, 72
-MAXLEV = 8
+MAXLEV = 12
 
 
 def _acc(x, y, vx, vy):
