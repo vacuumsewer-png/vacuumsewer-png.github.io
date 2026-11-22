@@ -57,7 +57,7 @@ def main():
         return
 
     t1 = time.time()
-    loud = audio.master(scene.audio(), base + ".wav")
+    loud = audio.master(scene.audio(), base + ".wav", ceiling_db=getattr(scene, "CEILING_DB", -2.5))
     t2 = time.time()
     pipeline.render(scene, base + ".mp4", base + ".wav", a.workers)
     os.remove(base + ".wav")
