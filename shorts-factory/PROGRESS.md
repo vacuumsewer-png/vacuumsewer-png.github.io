@@ -1,5 +1,5 @@
 # PROGRESS (Predixel, 23 Nov 2026)
 Task: predixel-daily scheduled run 23 Nov.
-Done: git pull; track.py + journal done; builder agent for STRIKE launched (scenes/strike.py).
-Next: wait for Unshatter agent; then ChatGPT title+thumb (fresh chat, spoiler check vs drama.winner SKY) for Strike and Unshatter, upload from out/upload, schedule 24 Nov 12:00 ET + 19:00 ET, Related video, move to H:, pins for Magnet Chaos/Star Forge after public; commit/push.
-Status: IN PROGRESS
+Done: pull, tracker+journal, River Drift pinned comment, Strike + Unshatter built, packaged (ChatGPT thumbs), uploaded, scheduled 24 Nov 12:00/19:00 ET, Related video set, files on H:.
+Next: pin comments for Magnet Chaos, Star Forge (public 23 Nov), Strike, Unshatter once public; reply to viewers; set Domino Giant->? done; build 2 more new mechanics (Bridge Load Test, Breaking Point) and schedule from 25 Nov 12:00 ET (buffer needs 14 slots, has ~3); community poll.
+Status: IN PROGRESS (buffer short)
