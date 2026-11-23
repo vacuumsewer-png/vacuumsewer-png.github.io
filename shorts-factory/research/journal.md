@@ -25,3 +25,8 @@ Daily notes from `track.py` (what gained, what is dying, one change for our next
 - Gained: Bounce Theory bowling-ball shatter series (3.5M in 31h), Memeland/Super Balls "will it reach the final form" merge series, Grid Loops satisfying-object loops.
 - Dying/flat: none notable in the top 20; Forya/Watch the Math still absent.
 - Change for us: keep the "pick before X" hook task; Magnet Chaos next (a visible color-fate map matches the "which color" winners).
+
+## 2026-11-23
+- Gained: Bounce Theory reverse-shatter (3.1M in 31h, now rewinds), Memeland "final form" merge series, BetOnTheColor "how many snips until the ring breaks?" (1.35M, number-quiz).
+- Dying/flat: none in the top 20; question-first number quizzes keep winning.
+- Change for us: build number-quiz and reverse/rewind mechanics (Strike, Unshatter) with a PICK NOW countdown; no copies of Domino Giant.

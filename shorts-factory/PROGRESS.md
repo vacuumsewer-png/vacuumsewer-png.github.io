@@ -1,7 +1,5 @@
-# PROGRESS (Predixel, 22 Nov 2026)
-Task: owner 22 Nov: DG2 off YouTube, previous videos in the queue, uploaded videos to H:.
-Done:
-- [x] scenes/dominogiant2.py, seed 90, rendered + QA pass (out/upload/dominogiant2_seed90.mp4), ChatGPT title/thumb
-- [x] Scheduled Tdx9NKZ61b0 22 Nov 19:00 ET; Related video -> Domino Giant; Magnet Chaos moved to 23 Nov 12:00 ET
-Next: daily task builds new mechanics for 24 Nov onward (buffer empty); pin comments for Magnet Chaos and Star Forge after they go public.
-Status: DONE for 23 Nov queue
+# PROGRESS (Predixel, 23 Nov 2026)
+Task: predixel-daily scheduled run 23 Nov.
+Done: git pull; track.py + journal done; builder agent for STRIKE launched (scenes/strike.py).
+Next: wait for Unshatter agent; then ChatGPT title+thumb (fresh chat, spoiler check vs drama.winner SKY) for Strike and Unshatter, upload from out/upload, schedule 24 Nov 12:00 ET + 19:00 ET, Related video, move to H:, pins for Magnet Chaos/Star Forge after public; commit/push.
+Status: IN PROGRESS
