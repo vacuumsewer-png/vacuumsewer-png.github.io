@@ -245,3 +245,45 @@ def master(x, path, lufs=-14.0, ceiling_db=-2.5):
         os.remove(tmp)
     write_wav(path, y)
     return loudness(path)
+
+
+# ------------------------------------------------------------------ escalation (owner idea, 24 Nov)
+def tension_bed(dur, reveal_t, root=45, seed=7, bpm0=96.0, bpm1=132.0, gain=0.5):
+    """A music bed that builds toward the reveal, then drops.
+
+    Layers enter one by one (pulse, then bass, then hats, then an arpeggio), the tempo speeds up
+    from bpm0 to bpm1, a noise riser fills the last 3 s, a short silence sits right before
+    reveal_t, and a boom plus a chord land on the reveal. Returns a stereo float array
+    (len = dur * SR) to add under the scene's own sound effects before master().
+    """
+    rng = np.random.default_rng(seed)
+    n = int(dur * SR)
+    buf = np.zeros((n + SR, 2))
+    t, beat = 0.0, 0
+    arp = [0, 7, 12, 15, 19, 15, 12, 7]
+    drone = pad(hz(root), reveal_t, attack=0.05, release=0.3) + 0.6 * pad(hz(root + 7), reveal_t, attack=0.05, release=0.3)
+    drone *= np.linspace(0.6, 1.0, len(drone))                    # present from frame 0, swells slowly
+    place(buf, drone, 0.0, 0.22)
+    while t < reveal_t - 0.35:
+        k = t / max(1e-6, reveal_t)                                   # 0 -> 1 through the build
+        bpm = bpm0 + (bpm1 - bpm0) * k ** 1.5
+        step = 60.0 / bpm / 2                                         # eighth notes
+        lvl = 0.75 + 0.25 * k
+        if beat % 2 == 0:
+            place(buf, kick(0.22), t, 0.55 * lvl)                     # pulse from the first beat
+        if k > 0.2 and beat % 4 == 0:
+            place(buf, bass(hz(root - 12 + (5 if (beat // 16) % 2 else 0)), 0.3), t, 0.35 * lvl)
+        if k > 0.4:
+            place(buf, hat(rng), t, 0.10 + 0.12 * k, pan=0.3 if beat % 2 else -0.3)
+        if k > 0.6:
+            place(buf, pluck(hz(root + 12 + arp[beat % 8]), 0.25), t, 0.12 + 0.12 * k, pan=-0.2)
+        t += step
+        beat += 1
+    r0 = max(0.0, reveal_t - 3.0)
+    rise = swept_noise(rng, reveal_t - 0.35 - r0, 400, 6000)
+    rise *= np.linspace(0.0, 1.0, len(rise)) ** 2
+    place(buf, rise, r0, 0.22)
+    place(buf, boom(rng, 1.4), reveal_t, 0.9)
+    for d in (0, 4, 7, 12):
+        place(buf, pad(hz(root + 12 + d), min(2.5, dur - reveal_t + 0.5), attack=0.02, release=1.2), reveal_t, 0.18)
+    return buf[:n] * gain

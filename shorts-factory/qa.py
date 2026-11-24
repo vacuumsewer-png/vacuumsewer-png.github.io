@@ -148,6 +148,25 @@ def main():
     check("first frame is not dark or empty", g[0].mean() > 12 and g[0].std() > 12,
           f"luma mean {g[0].mean():.1f}, std {g[0].std():.1f}")
 
+    # ---- escalation arc (owner idea 24 Nov): sound and picture should build toward the reveal. Warnings only.
+    # The build-up is the first 80% of the Short (the reveal sits in the last ~20%), split into thirds.
+    def thirds(arr, frac=0.8):
+        n = max(3, int(len(arr) * frac))
+        k = n // 3
+        return [arr[i * k:(i + 1) * k] for i in range(3)]
+    a_lv = [float(np.mean(t)) for t in thirds(db)]                                  # mean level, dB
+    a_on = [float(np.mean(t)) * 20 for t in thirds(onset.astype(float))]            # onsets per second
+    v_mo = [float(np.mean(t)) for t in thirds(step)]                                # motion
+    v_ct = [float(np.mean([f.std() for f in t[::6]])) for t in thirds(g[1:])]      # contrast (luma spread)
+    snd_up = a_lv[2] - a_lv[0] >= 1.5 or a_on[2] >= 1.3 * max(0.05, a_on[0])
+    pic_up = v_mo[2] >= 1.2 * max(0.05, v_mo[0]) or v_ct[2] >= 1.1 * max(1.0, v_ct[0])
+    notes.append((snd_up, "sound builds toward the reveal",
+                  f"level by third {[round(v, 1) for v in a_lv]} dB, onsets/s {[round(v, 1) for v in a_on]} "
+                  "(want the last third louder by 1.5 dB or 30% busier)"))
+    notes.append((pic_up, "picture builds toward the reveal",
+                  f"motion by third {[round(v, 2) for v in v_mo]}, contrast {[round(v, 1) for v in v_ct]} "
+                  "(want the last third 20% more motion or 10% more contrast)"))
+
     frames = []
     if a.frames:
         out_dir = a.frames_dir or os.path.splitext(a.video)[0] + "_frames"
