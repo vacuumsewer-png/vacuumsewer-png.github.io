@@ -30,3 +30,9 @@ Daily notes from `track.py` (what gained, what is dying, one change for our next
 - Gained: Bounce Theory reverse-shatter (3.1M in 31h, now rewinds), Memeland "final form" merge series, BetOnTheColor "how many snips until the ring breaks?" (1.35M, number-quiz).
 - Dying/flat: none in the top 20; question-first number quizzes keep winning.
 - Change for us: build number-quiz and reverse/rewind mechanics (Strike, Unshatter) with a PICK NOW countdown; no copies of Domino Giant.
+
+## 2026-11-24
+- Gain: Bounce Theory shatter loops (14.7M single video, +6.3M/day), Memeland 'Will it reach the Final Form?' merge series (+5.7M), Grid Loops table flips, BetOnTheColor 'How many snips' counting (1.76M in 3d).
+- Pattern: number/outcome question in title + one satisfying escalating event; series with same hook sells repeats.
+- Dying: nothing obvious; generic color-race sims stay under 50K.
+- Change for next builds: question-first number quiz (Bridge Load Test: how many cars?), visible event by 2.5 s, answer in last 2 s; new mechanic, no copy of Domino Giant.
