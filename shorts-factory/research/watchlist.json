@@ -678,6 +678,106 @@
    "format": "Hand-drawn office-humour animation with one recurring character, caption on top, spoken audio (Shorts)",
    "notes": "Reference outside our format, pointed out by the owner on 16 Nov 2026. Joined Jun 12, 2022; 742 videos; 62K subscribers; 45.39M views on 16 Nov. One Short (posted 5 Jul 2026) has 27M views, about 60% of lifetime views; the 48 newest Shorts have a median of about 35K. Join button is on, so it is in the Partner Program. Uses film parodies and real people's faces, which we do not.",
    "source": "added 2026-11-16 with --add"
+  },
+  {
+   "handle": "CodeCraftedPhysics",
+   "name": "CodeCraftedPhysics",
+   "category": "sim",
+   "counter_example": false,
+   "channel_id": "UCF4qCxA5tk0Di6niZprPucw",
+   "format": null,
+   "notes": "",
+   "source": "added 2026-11-24 with --add"
+  },
+  {
+   "handle": "SatisfyingPhysicsSimulation",
+   "name": "Satisfying Physics Simulation",
+   "category": "sim",
+   "counter_example": false,
+   "channel_id": "UCotJqOQEwG9OgDL2coBl9UA",
+   "format": null,
+   "notes": "",
+   "source": "added 2026-11-24 with --add"
+  },
+  {
+   "handle": "LoopedPhysics",
+   "name": "Looped Physics",
+   "category": "sim",
+   "counter_example": false,
+   "channel_id": "UCYm5ScS1nnMMqkxAtPn0d_Q",
+   "format": null,
+   "notes": "",
+   "source": "added 2026-11-24 with --add"
+  },
+  {
+   "handle": "Earclacks",
+   "name": "Earclacks",
+   "category": "sim",
+   "counter_example": false,
+   "channel_id": "UChB01-7qJHyomNp3AM5l-Zg",
+   "format": null,
+   "notes": "",
+   "source": "added 2026-11-24 with --add"
+  },
+  {
+   "handle": "mikan2d",
+   "name": "MIKAN",
+   "category": "marble-flag",
+   "counter_example": false,
+   "channel_id": "UCRfxI01xPgzql7ZBS6WlebQ",
+   "format": null,
+   "notes": "",
+   "source": "added 2026-11-24 with --add"
+  },
+  {
+   "handle": "mikan3d",
+   "name": "MIKAN 3D",
+   "category": "marble-flag",
+   "counter_example": false,
+   "channel_id": "UCTC_Yg9Hxe34L5KIVxxx31Q",
+   "format": null,
+   "notes": "",
+   "source": "added 2026-11-24 with --add"
+  },
+  {
+   "handle": "RileyMarbles",
+   "name": "Riley Marbles",
+   "category": "marble-flag",
+   "counter_example": false,
+   "channel_id": "UCvX5RBX9sFraCXTM3XYvh6g",
+   "format": null,
+   "notes": "",
+   "source": "added 2026-11-24 with --add"
+  },
+  {
+   "handle": "moreballs",
+   "name": "MoreBalls",
+   "category": "marble-flag",
+   "counter_example": false,
+   "channel_id": "UCIj4R1r9BoKpBDkgR8sXSng",
+   "format": null,
+   "notes": "",
+   "source": "added 2026-11-24 with --add"
+  },
+  {
+   "handle": "CrazyMarbleRace",
+   "name": "Crazy Marble Race",
+   "category": "marble-flag",
+   "counter_example": false,
+   "channel_id": "UCYAOO-SAasNHv6rtUQhyrlQ",
+   "format": null,
+   "notes": "",
+   "source": "added 2026-11-24 with --add"
+  },
+  {
+   "handle": "s3dv",
+   "name": "S3dV",
+   "category": "loop3d",
+   "counter_example": false,
+   "channel_id": "UCz0bZYFj00tx38Vkf_tlBYQ",
+   "format": null,
+   "notes": "",
+   "source": "added 2026-11-24 with --add"
   }
  ]
 }
