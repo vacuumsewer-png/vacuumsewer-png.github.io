@@ -36,3 +36,9 @@ Daily notes from `track.py` (what gained, what is dying, one change for our next
 - Pattern: number/outcome question in title + one satisfying escalating event; series with same hook sells repeats.
 - Dying: nothing obvious; generic color-race sims stay under 50K.
 - Change for next builds: question-first number quiz (Bridge Load Test: how many cars?), visible event by 2.5 s, answer in last 2 s; new mechanic, no copy of Domino Giant.
+
+## 2026-11-25
+- Gain: Bounce Theory shatter loops (+23.4M/day channel, 1.84M new in 20h), Memeland 'Will it reach the Final Form?' merge (+7M), Marble Dream League roster/flag sims, BetOnTheColor counting.
+- Pattern: object-shatter and merge-to-final-form with a question in the title; series with the same hook; named roster (UCL, Liga MX).
+- Dying: Riddle Rush -1.1M (view recount); plain color sims remain under 50K.
+- Change for next builds: lane rotation (lane 6 merge-to-final-form with original objects, lane 3 destruction count); Bridge Load is lane 1 (25 Nov 19:00 ET).
