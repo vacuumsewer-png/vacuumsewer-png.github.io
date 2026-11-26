@@ -42,3 +42,9 @@ Daily notes from `track.py` (what gained, what is dying, one change for our next
 - Pattern: object-shatter and merge-to-final-form with a question in the title; series with the same hook; named roster (UCL, Liga MX).
 - Dying: Riddle Rush -1.1M (view recount); plain color sims remain under 50K.
 - Change for next builds: lane rotation (lane 6 merge-to-final-form with original objects, lane 3 destruction count); Bridge Load is lane 1 (25 Nov 19:00 ET).
+
+## 2026-11-26
+- Gain: Bounce Theory shatter loops again (+6.9M/day; basketballs into shards 1.52M in 14h), Grid Loops 3D tables (+3.3M), BetOnTheColor 'How many snips until the ring breaks?' 2.48M.
+- Pattern: one glossy 3D-looking format repeated daily; 'How many X until Y?' counting titles keep winning.
+- Dying: plain color/flag counter-example channels stay under 1K per video despite volume.
+- Change for next builds: per 26 Nov strategy, SCALE (familiar object grows to absurd goal, one counter) and CRUSH (glossy pieces count); no chips, no PICK NOW panel.
