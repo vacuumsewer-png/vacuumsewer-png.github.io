@@ -289,6 +289,15 @@ class CrushScene:
     CEILING_DB = -3.4
 
     # ---------------------------------------------------------------- overridables
+    @classmethod
+    def run_sim(cls, seed):
+        """The fracture simulation (a subclass may swap in its own load schedule or cut rule)."""
+        return simulate(seed, cls)
+
+    def t_force(self, s):
+        """First time the load reaches s (inf if never)."""
+        return time_for(s, type(self), self.fs, self.fslam)
+
     def make_texture(self):
         raise NotImplementedError
 
@@ -320,7 +329,7 @@ class CrushScene:
     def __init__(self, seed):
         C = type(self)
         self.seed = seed
-        sim = simulate(seed, C)
+        sim = C.run_sim(seed)
         self.stats = drama(sim, C)
         nodes = sim["nodes"]
         if not math.isfinite(nodes[0]["td"]):
@@ -358,7 +367,7 @@ class CrushScene:
         self.stress = []                                   # a big piece about to break glints
         for i, n in enumerate(nodes):
             if n["area"] >= 0.010:
-                ts = time_for(0.86 * n["s"], C, self.fs, self.fslam)
+                ts = self.t_force(0.86 * n["s"])
                 if n["tb"] + 0.12 < ts < min(n["td"] - 0.08, self.T_SLAM):
                     self.stress.append((ts, i))
         self._make_chips()

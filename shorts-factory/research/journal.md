@@ -48,3 +48,9 @@ Daily notes from `track.py` (what gained, what is dying, one change for our next
 - Pattern: one glossy 3D-looking format repeated daily; 'How many X until Y?' counting titles keep winning.
 - Dying: plain color/flag counter-example channels stay under 1K per video despite volume.
 - Change for next builds: per 26 Nov strategy, SCALE (familiar object grows to absurd goal, one counter) and CRUSH (glossy pieces count); no chips, no PICK NOW panel.
+
+## 2026-11-27
+- Gain: Bounce Theory shatter loops keep compounding (basketballs into pink shards +2.03M/day, 3.55M at 34 h; three new ball-shatter uploads in a day); BetOnTheColor "Can the light fill the hexagon?" +1.01M (fill-until question).
+- Pattern: winners post the same glossy destruction format several times a day with a new object each time (basketball, soccer ball, bowling balls); Grid Loops swaps table material (oak, marble) inside one format.
+- Dying: counter-example channels still under ~1K per video despite volume; plain color sims stay small.
+- Change for next builds: CRUSH episodes vary the object AND the impactor (today: chocolate bar under a dropping steel weight); SCALE episode 2 uses a fill/sink goal (pennies into a boat) to echo the "fill until" titles.
