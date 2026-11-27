@@ -1,4 +1,4 @@
 Task: Predixel daily routine (scheduled run 27 Nov)
-Done: git pull; email check (nothing client-related); tracker + journal 27 Nov; builder agents started for scenes/pennyboat.py (SCALE ep2) and scenes/chocolatecrush.py (CRUSH ep2); chocolatecrush seed140 built+QA (447 pieces, upload copy ready); pennyboat seed1 built+QA, polish round running
-Next: ChatGPT thumb + upload chocolatecrush to 28 Nov 12:00 ET; then pennyboat 28 Nov 19:00 ET; pins Crush Count/Merge Form
-Status: IN PROGRESS (Claude in Chrome not connected at 1st check)
+Done: git pull; email check; tracker + journal; Chocolate Crush (b7V3QQHtOhQ, 28 Nov 12:00 ET) and Penny Boat (aipcyX3_72I, 28 Nov 19:00 ET) built, QA'd, uploaded, scheduled, Related videos set; files moved to H:; PLAYBOOK updated; Chrome tab closed
+Next (next run): ChatGPT thumbnails for both (Chrome froze on ChatGPT); pins for Crush Count, Merge Form, Ice Crush, Balloon Lift; build 2 more for 29 Nov
+Status: DONE for 27 Nov run (thumbnails pending)
