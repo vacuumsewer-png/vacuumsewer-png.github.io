@@ -257,6 +257,7 @@ class CrushScene:
     CASCADE_MAX = 0.65
     T_FIRST_MAX = 2.0
     LOOP_FADE = 0.40
+    WHY_DELAY = 0.0            # seconds after the answer flash before the why line replaces the question
     # model
     QEXP = 0.70                # force = fs * x ** QEXP: the crack rate rises through the build
     GEN_DELAY = 0.06
@@ -300,6 +301,10 @@ class CrushScene:
 
     def make_texture(self):
         raise NotImplementedError
+
+    def crack_pts(self, i, seg):
+        """Points (u, v) of the crack line drawn when piece i is born (a scene may return a curve)."""
+        return ((seg[0], seg[1]), (seg[2], seg[3]))
 
     def why_lines(self):
         return ("SMALL PIECES ARE STRONGER,", f"SO THE SLAM STOPS AT {self.n_final}")
@@ -623,7 +628,7 @@ class CrushScene:
             ctx.paint()
             ctx.restore()
         # ---- overlay: one question line (the why line takes its place on the reveal) and one counter
-        wa = ease_out(clamp(r / 0.25)) if r >= 0 else 0.0
+        wa = ease_out(clamp((r - self.WHY_DELAY) / 0.25)) if r >= self.WHY_DELAY else 0.0
         if wa < 1.0:
             ctx.set_source_surface(res["q"], 0, self.HEAD_Y)
             ctx.paint_with_alpha(1.0 - wa)
@@ -752,12 +757,14 @@ class CrushScene:
         for tb, seg, i in self.cuts:
             age = t - tb
             if 0 <= age < 0.40 and tb < self.T_SLAM + 0.05:
-                x0, y0 = self.tx(seg[0], seg[1], hc, spread)
-                x1, y1 = self.tx(seg[2], seg[3], hc, spread)
                 a = math.exp(-age / 0.11)
                 ctx.new_path()
-                ctx.move_to(x0, y0)
-                ctx.line_to(x1, y1)
+                for j, (u, v) in enumerate(self.crack_pts(i, seg)):
+                    x, y = self.tx(u, v, hc, spread)
+                    if j:
+                        ctx.line_to(x, y)
+                    else:
+                        ctx.move_to(x, y)
                 ctx.set_source_rgba(1.0, 0.80, 0.45, 0.55 * a)
                 ctx.set_line_width(12)
                 ctx.stroke_preserve()

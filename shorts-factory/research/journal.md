@@ -54,3 +54,9 @@ Daily notes from `track.py` (what gained, what is dying, one change for our next
 - Pattern: winners post the same glossy destruction format several times a day with a new object each time (basketball, soccer ball, bowling balls); Grid Loops swaps table material (oak, marble) inside one format.
 - Dying: counter-example channels still under ~1K per video despite volume; plain color sims stay small.
 - Change for next builds: CRUSH episodes vary the object AND the impactor (today: chocolate bar under a dropping steel weight); SCALE episode 2 uses a fill/sink goal (pennies into a boat) to echo the "fill until" titles.
+
+## 2026-11-28
+- Gain: Bounce Theory now posts 3+ ball-shatter loops a day (bowling balls +1.27M in 38 h, new uploads 380-500K overnight); BetOnTheColor "How many snips until the ring breaks?" at 3.1M keeps proving "how many ... until" questions.
+- Gain: Memeland "Will it reach the Final Form?" merges post daily with a new theme each (Chad Cat, Space, Flag) at 300-600K in a day.
+- Dying: plain color/flag counter channels still flat; volume without a new object each time does not lift them.
+- Change for next builds: SCALE ep3 uses a "until it breaks" stack goal (toy bricks until the bottom one fails, real load-test numbers); CRUSH ep3 swaps impactor again (wrecking ball into a clay pot) to keep object AND impactor new.

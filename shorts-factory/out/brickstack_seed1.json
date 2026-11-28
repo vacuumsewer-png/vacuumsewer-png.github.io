@@ -1,0 +1,92 @@
+{
+  "title": "How Many Toy Bricks Until the Bottom One Breaks? \ud83e\uddf1",
+  "description": "Comment your number \ud83d\udc47 How many bricks did you guess?\nPlastic 2x2 toy bricks get stacked on a single brick, one at a time at first, then in bigger and bigger batches. The counter shows every brick in the tower.\nEach brick weighs 1.15 g, and the tower is drawn at its true height. The bottom brick carries the weight of every brick above it and gives way only when that weight beats the crushing load a real 2x2 brick survived in a lab load test. The circle shows the bottom brick up close as it strains. The person, the house, the Eiffel Tower, the Burj Khalifa and the clouds show how tall the tower gets as the camera pulls back.\nNo footage, samples or stock media.\n#simulation #satisfying #physics",
+  "tags": [
+    "toy bricks",
+    "building bricks",
+    "brick tower",
+    "how many bricks",
+    "tallest tower",
+    "stacking",
+    "compression test",
+    "plastic strength",
+    "scale",
+    "physics simulation",
+    "exponential growth",
+    "prediction",
+    "satisfying",
+    "made with code",
+    "simulation",
+    "physics"
+  ],
+  "pinned_comment": "Comment your number \ud83d\udc47 How many toy bricks can you stack before the bottom one breaks?",
+  "made_for_kids": false,
+  "synthetic_media_disclosure": false,
+  "synthetic_media_disclosure_reason": "Clearly stylized 2D animation of cartoon toy bricks, buildings and sky; nothing realistic that could be mistaken for real people, places or events.",
+  "seed": 1,
+  "duration_seconds": 24.5,
+  "drama": {
+    "seed": 1,
+    "score": 1.0,
+    "valid": true,
+    "winner": "375,838",
+    "answer": 375838,
+    "events": 68,
+    "last_count_before_reveal": 309893,
+    "reveal_s": 21.8,
+    "first_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "brick_mass_g": 1.15,
+    "fail_load_n": 4240.0,
+    "bricks_above": 375837,
+    "tower_height_m": 3608.0,
+    "note": "answer = ceil(4240 / (0.00115 * 9.81)) + 1 (bottom brick)"
+  },
+  "seed_search": {
+    "seeds_scored": 600,
+    "seconds": 0.7,
+    "top5": [
+      {
+        "seed": 1,
+        "score": 1.0
+      },
+      {
+        "seed": 2,
+        "score": 1.0
+      },
+      {
+        "seed": 3,
+        "score": 1.0
+      },
+      {
+        "seed": 4,
+        "score": 1.0
+      },
+      {
+        "seed": 5,
+        "score": 1.0
+      }
+    ]
+  },
+  "render": {
+    "frames": 735,
+    "fps": 30,
+    "duration_seconds": 24.5,
+    "audio_seconds": 4.6,
+    "video_seconds": 53.4,
+    "total_seconds": 58.7,
+    "premaster_loudness": {
+      "lufs": -14.0,
+      "lra": 9.9,
+      "true_peak": -3.4
+    }
+  }
+}
