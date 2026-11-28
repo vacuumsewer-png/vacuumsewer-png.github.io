@@ -1,0 +1,73 @@
+{
+  "title": "4 Swings, Each One Higher… How Many Bricks Come Out?",
+  "description": "Comment your number 👇\nA steel wrecking ball on a 7.6 m cable swings into a wall of 172 bricks four times, released from 22, 38, 56, 80 degrees. A higher release means a faster ball: 12, 20, 29, 40 km/h at impact.\nEvery brick is a real rigid body in a Blender physics simulation, and the count is measured, not picked: a brick counts once it ends up more than 30 cm from where it was laid.\nMade by Predixel: I set the swings, the simulation decides the rest. No footage, samples or stock media.\n#simulation #physics #satisfying",
+  "tags": [
+    "simulation",
+    "wrecking ball",
+    "brick wall",
+    "physics",
+    "blender",
+    "3d",
+    "how many",
+    "satisfying",
+    "destruction",
+    "crush",
+    "made with code",
+    "oddly satisfying"
+  ],
+  "pinned_comment": "Comment your number 👇 How many of the 172 bricks did the wrecking ball knock out?",
+  "made_for_kids": false,
+  "synthetic_media_disclosure": false,
+  "synthetic_media_disclosure_reason": "Clearly animated 3D simulation of a wrecking ball and toy-like brick wall; not realistic footage of people, places or events.",
+  "family": "CRUSH",
+  "format": "3D (Blender 4.5 EEVEE)",
+  "duration_seconds": 25.0,
+  "answer": 148,
+  "drama": {
+    "answer_bricks": 148,
+    "bricks_total": 172,
+    "hit_seconds": [
+      0.8,
+      6.001,
+      11.401,
+      16.801
+    ],
+    "hit_speed_kmh": [
+      11.9,
+      20.2,
+      29.2,
+      40.0
+    ],
+    "release_angle_deg": [
+      22,
+      38,
+      56,
+      80
+    ],
+    "knocked_out_after_hit": [
+      2,
+      10,
+      21,
+      148
+    ],
+    "final_count": 148,
+    "reveal_s": 22.0,
+    "landing_sounds": 65,
+    "rule": "brick centre more than 0.30 m from where it was laid"
+  },
+  "on_screen": {
+    "question": "HOW MANY BRICKS GET KNOCKED OUT?",
+    "counter": "HIT n / 4",
+    "physics_note": "Higher swing = faster ball: 12 to 40 km/h"
+  },
+  "render": {
+    "blender": "engine BLENDER_EEVEE_NEXT samples 16 bricks 172 frames 750 render 1\ntotal 991.1s  mean 1.30s/frame  max 11.23s",
+    "post_audio_seconds": 6.1,
+    "post_video_seconds": 134.6,
+    "loudness": {
+      "lufs": -14.1,
+      "lra": 5.4,
+      "true_peak": -2.0
+    }
+  }
+}

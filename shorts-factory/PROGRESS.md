@@ -1,8 +1,12 @@
-﻿Task: predixel-night-3d (27 Nov 00:30 run): build + render ONE 3D Short in Blender (no upload)
+﻿Task: predixel-night-3d (28 Nov run, started 09:32 after the night slot): render ONE 3D Short in Blender (no upload)
 Done:
-- [x] git pull, strategy + playbook read
-- [x] blender/wreckingwall3d.py (CRUSH: wrecking ball, 4 swings 22/38/56/80 deg = 12/20/29/40 km/h, 172-brick wall) and blender/post_wreckingwall.py written; swing schedule verified outside Blender
-Next: next night run (or any free slot): free RAM check, then `D:\tools\blender-4.5\blender.exe -b -P blender/wreckingwall3d.py -- out/3d_wreckingwall 750 16 1`, then `py blender/post_wreckingwall.py out/3d_wreckingwall`, qa.py, mkupload.py, contact sheet, PLAYBOOK line, commit/push
-Status: STOPPED, nothing rendered: free RAM stayed under 1.5 GB (1.16 / 1.32 / 1.41 / 1.10 GB over 30 min of retries; 16 GB total, used by Chrome, ChatGPT, Claude, Defender and QFlow). Scripts are committed and ready; no owner action needed unless RAM stays this low every night (closing ChatGPT/Chrome at night would free it).
+- [x] git pull, strategy + playbook read; RAM 2.29 GB free at start (passed gate)
+- [x] blender/wreckingwall3d.py: hits retuned to 2 / 10 / 21 / 148 bricks knocked out; OUT path made absolute (relative paths sent the frames to C:\out)
+- [x] Rendered 750 frames (991 s, 1.30 s/frame). Post: out/wreckingwall_3d.mp4 + out/wreckingwall_3d.json (answer 148). QA all PASS
+- [x] Upload copy out/upload/wreckingwall_3d.mp4 (9.22 MB), QA PASS; contact sheet OK; PNG frames deleted
+- [x] PLAYBOOK line added; committed and pushed
+Next: daily run packages Wrecking Wall (ChatGPT title + thumbnail, pin 'Comment your number 👇 How many of the 172 bricks did the wrecking ball knock out?') and schedules it in the next free 19:00 ET slot. The next night-3D run should be the SCALE family with a new object and colour pair.
+Status: DONE
 
-Previous (26 Nov daily run): DONE. Next daily run: pins once public (Crush Count, Merge Form, Ice Crush, Balloon Lift; texts in PLAYBOOK); build 2 more (SCALE + CRUSH, new objects) for 28 Nov; package tonight's 3D Short (out/wreckingwall_3d.mp4) for the next free 19:00 slot
+Previous (27 Nov night): stopped on low RAM, nothing rendered.
+Previous (26 Nov daily run): DONE.

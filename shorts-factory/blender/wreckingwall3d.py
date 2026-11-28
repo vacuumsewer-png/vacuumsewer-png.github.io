@@ -21,7 +21,7 @@ import numpy as np
 from mathutils import Vector
 
 argv = sys.argv[sys.argv.index("--") + 1:] if "--" in sys.argv else []
-OUT = argv[0] if argv else os.path.abspath("out/3d_wreckingwall")
+OUT = os.path.abspath(argv[0] if argv else "out/3d_wreckingwall")   # absolute: Blender resolves relative render paths against the drive root
 FRAMES = int(argv[1]) if len(argv) > 1 else 750
 SAMPLES = int(argv[2]) if len(argv) > 2 else 16
 RENDER = int(argv[3]) if len(argv) > 3 else 1
@@ -36,7 +36,7 @@ GAP = 0.004
 WALL_FRONT = -BRICK[1] / 2
 PIVOT_Y = WALL_FRONT - R - 0.02                # ball touches the wall at theta ~ 0
 # (release angle deg, braking depth m, x of the hit, target hit time s)
-HITS = [(22, 0.22, -1.35, 0.8), (38, 0.40, 1.30, 6.0), (56, 0.65, -0.25, 11.4), (80, 1.55, 0.35, 16.8)]
+HITS = [(22, 0.30, -1.35, 0.8), (38, 0.40, 1.30, 6.0), (56, 0.40, -0.85, 11.4), (80, 1.55, 0.35, 16.8)]  # tuned 28 Nov: 2/10/21/148 knocked out
 
 
 def quarter(a_deg, dt=1 / 3000):
